@@ -28,7 +28,11 @@ document.addEventListener('DOMContentLoaded', () => {
             const activitiesList = document.createElement('ul');
             day.activities.forEach(activity => {
                 const listItem = document.createElement('li');
-                listItem.innerHTML = `<strong>${activity.time}</strong> <span>${activity.description} (${activity.location})</span>`;
+                let descriptionHtml = `<span>${activity.description} (${activity.location})</span>`;
+                if (activity.link) {
+                    descriptionHtml = `<a href="${activity.link}" target="_blank">${descriptionHtml}</a>`;
+                }
+                listItem.innerHTML = `<strong>${activity.time}</strong> ${descriptionHtml}`;
                 activitiesList.appendChild(listItem);
             });
             dayCard.appendChild(activitiesList);
