@@ -1,8 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-    fetch('itinerary.yaml')
-        .then(response => response.text())
-        .then(yamlText => {
-            const data = jsyaml.load(yamlText);
+    fetch('itinerary.json')
+        .then(response => response.json())
+        .then(data => {
             renderItinerary(data.itinerary);
         })
         .catch(error => {
