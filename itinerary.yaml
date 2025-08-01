@@ -3,6 +3,8 @@ start_date: 2025-08-11
 end_date: 2025-08-17
 travelers:
   - name: 旅客1
+  - name: 旅客2
+  - name: 旅客3
 
 itinerary:
   - date: 2025-08-11
@@ -19,14 +21,26 @@ itinerary:
       - time: 08:00
         description: 飯店Check-in並寄放行李
         location: 新宿區飯店
+      - time: 09:00
+        description: 早餐：飯店附近咖啡廳或便利商店輕食
+        location: 新宿
       - time: 10:00
-        description: 新宿御苑：在城市綠洲中放鬆身心
+        description: 新宿御苑：在城市綠洲中放鬆身心，享受早晨的寧靜
         location: 新宿御苑
+      - time: 12:30
+        description: 午餐：新宿Lumine Est百貨美食街 (多樣選擇)
+        location: 新宿Lumine Est
+      - time: 14:00
+        description: 新宿都廳展望室：免費俯瞰東京全景
+        location: 新宿都廳
       - time: 16:00
-        description: 新宿黃金街/歌舞伎町：體驗東京夜生活 (可依個人喜好選擇)
+        description: 新宿黃金街/歌舞伎町：體驗東京夜生活氛圍 (可依個人喜好選擇)
         location: 新宿黃金街/歌舞伎町
       - time: 19:00
-        description: 晚餐：新宿特色居酒屋或拉麵
+        description: 晚餐：新宿思い出橫丁 (懷舊小巷美食) 或 歌舞伎町特色居酒屋
+        location: 新宿思い出橫丁/歌舞伎町
+      - time: 21:00
+        description: 新宿逛街：BIC CAMERA 或 唐吉訶德 (購物)
         location: 新宿
 
   - date: 2025-08-12
@@ -34,116 +48,188 @@ itinerary:
     theme: 澀谷與原宿潮流
     accommodation: 新宿區
     activities:
-      - time: 09:00
-        description: 澀谷：忠犬八公像、澀谷交叉路口、澀谷109百貨
+      - time: 08:30
+        description: 早餐：新宿車站周邊連鎖咖啡廳 (如星巴克、Doutor)
+        location: 新宿
+      - time: 09:30
+        description: 前往澀谷
+        location: 新宿 - 澀谷
+      - time: 10:00
+        description: 澀谷：忠犬八公像、澀谷交叉路口 (體驗人潮)、澀谷109百貨 (潮流服飾)
         location: 澀谷
       - time: 12:30
-        description: 午餐：澀谷特色咖啡廳或餐廳
-        location: 澀谷
+        description: 午餐：澀谷Hikarie百貨美食街 或 澀谷中心街拉麵
+        location: 澀谷Hikarie/澀谷中心街
       - time: 14:00
-        description: 原宿：竹下通、明治神宮、表參道
+        description: 原宿：竹下通 (年輕潮流、可麗餅)、明治神宮 (莊嚴神聖)、表參道 (精品大道)
+        location: 原宿
+      - time: 17:00
+        description: LINE FRIENDS STORE 原宿店 (可愛周邊商品)
         location: 原宿
       - time: 19:00
-        description: 晚餐：原宿或澀谷周邊美食
+        description: 晚餐：原宿Kiddy Land附近特色餐廳 或 澀谷居酒屋
         location: 原宿/澀谷
+      - time: 21:00
+        description: 澀谷PARCO：逛街、任天堂東京店
+        location: 澀谷PARCO
 
   - date: 2025-08-13
     day: 3
     theme: 淺草與晴空塔
     accommodation: 新宿區
     activities:
-      - time: 09:00
-        description: 淺草寺：雷門、仲見世商店街
+      - time: 08:30
+        description: 早餐：飯店附近或前往淺草途中
+        location: 新宿/淺草
+      - time: 09:30
+        description: 前往淺草
+        location: 新宿 - 淺草
+      - time: 10:00
+        description: 淺草寺：雷門、仲見世商店街 (購買伴手禮、小吃)
         location: 淺草寺
       - time: 12:30
-        description: 午餐：淺草傳統美食 (如天婦羅、鰻魚飯)
+        description: 午餐：淺草傳統美食 (如大黑家天婦羅、淺草今半壽喜燒)
         location: 淺草
       - time: 14:00
-        description: 東京晴空塔：登塔俯瞰東京全景
+        description: 東京晴空塔：登塔俯瞰東京全景 (建議預約)
         location: 東京晴空塔
       - time: 17:00
-        description: 晴空塔周邊購物 (Solamachi)
+        description: 晴空塔周邊購物 (Solamachi)：動漫周邊、特色商店
         location: Solamachi
       - time: 19:00
-        description: 晚餐：晴空塔周邊餐廳
-        location: 晴空塔
+        description: 晚餐：晴空塔Solamachi餐廳 (多樣選擇)
+        location: 晴空塔Solamachi
+      - time: 21:00
+        description: 隅田川夜景散步
+        location: 隅田川
 
   - date: 2025-08-14
     day: 4
-    theme: 築地與銀座
+    theme: 池袋動漫與購物
     accommodation: 新宿區
     activities:
-      - time: 09:00
-        description: 築地場外市場：品嚐新鮮海鮮、壽司 (早餐/午餐)
-        location: 築地場外市場
+      - time: 08:30
+        description: 早餐：飯店附近
+        location: 新宿
+      - time: 09:30
+        description: 前往池袋
+        location: 新宿 - 池袋
+      - time: 10:00
+        description: 池袋Sunshine City：水族館、展望台、J-WORLD TOKYO (動漫主題樂園，需確認是否營業) 或 Namco Namja Town (室內主題樂園)
+        location: 池袋Sunshine City
       - time: 12:30
-        description: 午餐：銀座高級餐廳或百貨公司美食街
-        location: 銀座
-      - time: 14:00
-        description: 銀座：高級百貨公司、品牌旗艦店、歌舞伎座
-        location: 銀座
+        description: 午餐：Sunshine City內餐廳 或 池袋拉麵激戰區
+        location: Sunshine City/池袋
+      - time: 14:30
+        description: Animate 池袋本店：動漫周邊商品天堂
+        location: Animate 池袋本店
+      - time: 16:00
+        description: 池袋西口公園：散步、感受當地氛圍
+        location: 池袋西口公園
       - time: 17:00
-        description: 有樂町/日比谷：周邊散步、逛街
-        location: 有樂町/日比谷
+        description: Bic Camera 池袋本店：電器購物
+        location: Bic Camera 池袋本店
       - time: 19:00
-        description: 晚餐：銀座或有樂町周邊餐廳
-        location: 銀座/有樂町
+        description: 晚餐：池袋東口居酒屋街 或 燒肉店
+        location: 池袋
+      - time: 21:00
+        description: 池袋唐吉訶德：藥妝、零食購物
+        location: 池袋唐吉訶德
 
   - date: 2025-08-15
     day: 5
-    theme: 上野文化與公園
+    theme: 上野文化與動物園
     accommodation: 上野公園附近
     activities:
-      - time: 09:00
-        description: 早上從新宿區飯店Check-out，前往上野區飯店Check-in並寄放行李
+      - time: 08:30
+        description: 早餐：新宿區飯店Check-out，前往上野區飯店Check-in並寄放行李
         location: 新宿 - 上野
-      - time: 11:00
-        description: 上野公園：東京國立博物館、國立西洋美術館、上野動物園 (可依個人喜好選擇參觀)
+      - time: 10:00
+        description: 上野公園：東京國立博物館、國立西洋美術館 (依個人喜好選擇參觀)
         location: 上野公園
-      - time: 13:00
-        description: 午餐：上野公園周邊餐廳
+      - time: 12:30
+        description: 午餐：上野公園周邊餐廳 或 阿美橫丁小吃
         location: 上野
-      - time: 15:00
-        description: 阿美橫丁：體驗庶民風情、購物
+      - time: 14:00
+        description: 上野動物園：參觀可愛動物 (特別是熊貓)
+        location: 上野動物園
+      - time: 17:00
+        description: 阿美橫丁：體驗庶民風情、海鮮、零食、藥妝購物
         location: 阿美橫丁
       - time: 19:00
-        description: 晚餐：上野特色美食
+        description: 晚餐：阿美橫丁居酒屋 或 上野車站附近餐廳
+        location: 上野
+      - time: 21:00
+        description: 上野周邊散步
         location: 上野
 
   - date: 2025-08-16
     day: 6
-    theme: 台場與未來科技
+    theme: 秋葉原電器與動漫 / 近郊一日遊 (鎌倉)
     accommodation: 上野公園附近
     activities:
+      - time: 08:00
+        description: 早餐：飯店附近
+        location: 上野
+      - time: 09:00
+        description: **選項一：秋葉原** 前往秋葉原
+        location: 上野 - 秋葉原
       - time: 09:30
-        description: 台場：自由女神像、彩虹大橋、鋼彈立像
-        location: 台場
+        description: 秋葉原電器街：Yodobashi Akiba、Sofmap (電器、電子產品)
+        location: 秋葉原
       - time: 12:30
-        description: 午餐：台場購物中心美食街
-        location: 台場
+        description: 午餐：秋葉原女僕咖啡廳體驗 或 咖哩飯
+        location: 秋葉原
       - time: 14:00
-        description: 未來科學館 (Miraikan) 或 大江戶溫泉物語 (可依個人喜好選擇)
-        location: 台場
+        description: 秋葉原動漫周邊店：Animate、Mandarake、Volks (模型、漫畫、遊戲)
+        location: 秋葉原
       - time: 17:00
-        description: 台場海濱公園：欣賞夜景
-        location: 台場海濱公園
+        description: 秋葉原扭蛋會館、SEGA遊戲中心 (遊樂場所)
+        location: 秋葉原
       - time: 19:00
-        description: 晚餐：台場海濱餐廳
-        location: 台場
+        description: 晚餐：秋葉原特色餐廳 或 燒肉
+        location: 秋葉原
+      - time: 08:00
+        description: **選項二：鎌倉一日遊 (近郊)** 前往鎌倉 (約1小時車程)
+        location: 東京 - 鎌倉
+      - time: 09:30
+        description: 鎌倉大佛：高德院
+        location: 鎌倉大佛
+      - time: 11:00
+        description: 長谷寺：繡球花 (季節限定)、觀音像
+        location: 長谷寺
+      - time: 12:30
+        description: 午餐：鎌倉小町通美食 (海鮮丼、蕎麥麵)
+        location: 鎌倉小町通
+      - time: 14:00
+        description: 鶴岡八幡宮：鎌倉主要神社
+        location: 鶴岡八幡宮
+      - time: 16:00
+        description: 鎌倉高校前車站：灌籃高手平交道 (拍照打卡)
+        location: 鎌倉高校前車站
+      - time: 17:30
+        description: 返回東京
+        location: 鎌倉 - 東京
+      - time: 19:00
+        description: 晚餐：東京市區 (上野或新宿)
+        location: 東京
 
   - date: 2025-08-17
     day: 7
     theme: 離開東京
     accommodation: 無
     activities:
-      - time: 09:00
-        description: 早上：自由活動，可選擇補買伴手禮或前往未去過的景點
+      - time: 08:30
+        description: 早餐：飯店附近
+        location: 上野
+      - time: 09:30
+        description: 自由活動：可選擇補買伴手禮 (如東京車站一番街) 或 前往未去過的景點 (例如：皇居外苑、東京車站周邊)
         location: 東京市區
       - time: 12:00
-        description: 午餐：上野或成田機場周邊
-        location: 上野/成田機場
-      - time: 15:00
-        description: 前往東京成田機場
+        description: 午餐：東京車站或成田機場周邊
+        location: 東京車站/成田機場
+      - time: 14:00
+        description: 前往東京成田機場 (建議預留充足時間)
         location: 東京市區 - 成田機場
       - time: 19:30
         description: 東京成田機場 (NRT) 離開東京 (請提早抵達機場辦理登機手續)
