@@ -1,0 +1,150 @@
+trip_name: 東京七日遊
+start_date: 2025-08-11
+end_date: 2025-08-17
+travelers:
+  - name: 旅客1
+
+itinerary:
+  - date: 2025-08-11
+    day: 1
+    theme: 抵達與新宿初探
+    accommodation: 新宿區
+    activities:
+      - time: 04:25
+        description: 抵達東京羽田機場 (IT 216)
+        location: 羽田機場
+      - time: 06:00
+        description: 機場交通：搭乘利木津巴士或京急線前往新宿
+        location: 羽田機場 - 新宿
+      - time: 08:00
+        description: 飯店Check-in並寄放行李
+        location: 新宿區飯店
+      - time: 10:00
+        description: 新宿御苑：在城市綠洲中放鬆身心
+        location: 新宿御苑
+      - time: 16:00
+        description: 新宿黃金街/歌舞伎町：體驗東京夜生活 (可依個人喜好選擇)
+        location: 新宿黃金街/歌舞伎町
+      - time: 19:00
+        description: 晚餐：新宿特色居酒屋或拉麵
+        location: 新宿
+
+  - date: 2025-08-12
+    day: 2
+    theme: 澀谷與原宿潮流
+    accommodation: 新宿區
+    activities:
+      - time: 09:00
+        description: 澀谷：忠犬八公像、澀谷交叉路口、澀谷109百貨
+        location: 澀谷
+      - time: 12:30
+        description: 午餐：澀谷特色咖啡廳或餐廳
+        location: 澀谷
+      - time: 14:00
+        description: 原宿：竹下通、明治神宮、表參道
+        location: 原宿
+      - time: 19:00
+        description: 晚餐：原宿或澀谷周邊美食
+        location: 原宿/澀谷
+
+  - date: 2025-08-13
+    day: 3
+    theme: 淺草與晴空塔
+    accommodation: 新宿區
+    activities:
+      - time: 09:00
+        description: 淺草寺：雷門、仲見世商店街
+        location: 淺草寺
+      - time: 12:30
+        description: 午餐：淺草傳統美食 (如天婦羅、鰻魚飯)
+        location: 淺草
+      - time: 14:00
+        description: 東京晴空塔：登塔俯瞰東京全景
+        location: 東京晴空塔
+      - time: 17:00
+        description: 晴空塔周邊購物 (Solamachi)
+        location: Solamachi
+      - time: 19:00
+        description: 晚餐：晴空塔周邊餐廳
+        location: 晴空塔
+
+  - date: 2025-08-14
+    day: 4
+    theme: 築地與銀座
+    accommodation: 新宿區
+    activities:
+      - time: 09:00
+        description: 築地場外市場：品嚐新鮮海鮮、壽司 (早餐/午餐)
+        location: 築地場外市場
+      - time: 12:30
+        description: 午餐：銀座高級餐廳或百貨公司美食街
+        location: 銀座
+      - time: 14:00
+        description: 銀座：高級百貨公司、品牌旗艦店、歌舞伎座
+        location: 銀座
+      - time: 17:00
+        description: 有樂町/日比谷：周邊散步、逛街
+        location: 有樂町/日比谷
+      - time: 19:00
+        description: 晚餐：銀座或有樂町周邊餐廳
+        location: 銀座/有樂町
+
+  - date: 2025-08-15
+    day: 5
+    theme: 上野文化與公園
+    accommodation: 上野公園附近
+    activities:
+      - time: 09:00
+        description: 早上從新宿區飯店Check-out，前往上野區飯店Check-in並寄放行李
+        location: 新宿 - 上野
+      - time: 11:00
+        description: 上野公園：東京國立博物館、國立西洋美術館、上野動物園 (可依個人喜好選擇參觀)
+        location: 上野公園
+      - time: 13:00
+        description: 午餐：上野公園周邊餐廳
+        location: 上野
+      - time: 15:00
+        description: 阿美橫丁：體驗庶民風情、購物
+        location: 阿美橫丁
+      - time: 19:00
+        description: 晚餐：上野特色美食
+        location: 上野
+
+  - date: 2025-08-16
+    day: 6
+    theme: 台場與未來科技
+    accommodation: 上野公園附近
+    activities:
+      - time: 09:30
+        description: 台場：自由女神像、彩虹大橋、鋼彈立像
+        location: 台場
+      - time: 12:30
+        description: 午餐：台場購物中心美食街
+        location: 台場
+      - time: 14:00
+        description: 未來科學館 (Miraikan) 或 大江戶溫泉物語 (可依個人喜好選擇)
+        location: 台場
+      - time: 17:00
+        description: 台場海濱公園：欣賞夜景
+        location: 台場海濱公園
+      - time: 19:00
+        description: 晚餐：台場海濱餐廳
+        location: 台場
+
+  - date: 2025-08-17
+    day: 7
+    theme: 離開東京
+    accommodation: 無
+    activities:
+      - time: 09:00
+        description: 早上：自由活動，可選擇補買伴手禮或前往未去過的景點
+        location: 東京市區
+      - time: 12:00
+        description: 午餐：上野或成田機場周邊
+        location: 上野/成田機場
+      - time: 15:00
+        description: 前往東京成田機場
+        location: 東京市區 - 成田機場
+      - time: 19:30
+        description: 東京成田機場 (NRT) 離開東京 (請提早抵達機場辦理登機手續)
+        location: 成田機場
