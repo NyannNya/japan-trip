@@ -28,9 +28,9 @@
         },
         {
           "time": "06:00",
-          "description": "機場交通：搭乘利木津巴士或京急線前往新宿",
+          "description": "機場交通：搭乘京急線至品川轉JR山手線前往新宿 (約60-70分鐘，含轉乘)",
           "location": "羽田機場 - 新宿",
-          "link": null
+          "link": "https://www.limousinebus.co.jp/ch2/platform_searches/index/4/21"
         },
         {
           "time": "08:00",
@@ -40,9 +40,9 @@
         },
         {
           "time": "09:00",
-          "description": "早餐：飯店附近咖啡廳或便利商店輕食",
-          "location": "新宿",
-          "link": null
+          "description": "早餐：新宿Lumine Est百貨美食街 (多樣選擇)",
+          "location": "新宿Lumine Est",
+          "link": "https://www.lumine.ne.jp/est/"
         },
         {
           "time": "10:00",
@@ -70,9 +70,9 @@
         },
         {
           "time": "19:00",
-          "description": "晚餐：新宿思い出橫丁 (懷舊小巷美食) 或 歌舞伎町特色居酒屋",
+          "description": "晚餐：新宿思い出橫丁 (懷舊小巷美食) 或 歌舞伎町特色居酒屋 - 例如：鳥茂 (燒鳥)",
           "location": "新宿思い出橫丁/歌舞伎町",
-          "link": "https://shinjuku-omoide.com/"
+          "link": "https://tabelog.com/tokyo/A1304/A130401/13000780/"
         },
         {
           "time": "21:00",
@@ -96,7 +96,7 @@
         },
         {
           "time": "09:30",
-          "description": "前往澀谷",
+          "description": "前往澀谷：搭乘JR山手線 (約7分鐘)",
           "location": "新宿 - 澀谷",
           "link": null
         },
@@ -108,8 +108,8 @@
         },
         {
           "time": "12:30",
-          "description": "午餐：澀谷Hikarie百貨美食街 或 澀谷中心街拉麵",
-          "location": "澀谷Hikarie/澀谷中心街",
+          "description": "午餐：澀谷Hikarie百貨美食街 (多樣選擇)",
+          "location": "澀谷Hikarie",
           "link": "https://www.hikarie.jp/"
         },
         {
@@ -126,9 +126,9 @@
         },
         {
           "time": "19:00",
-          "description": "晚餐：原宿Kiddy Land附近特色餐廳 或 澀谷居酒屋",
-          "location": "原宿/澀谷",
-          "link": "https://www.kiddyland.co.jp/harajuku/"
+          "description": "晚餐：澀谷橫丁 (多樣日式小吃、居酒屋)",
+          "location": "澀谷橫丁",
+          "link": "https://shibuya-yokocho.com/"
         },
         {
           "time": "21:00",
@@ -152,7 +152,7 @@
         },
         {
           "time": "09:30",
-          "description": "前往淺草",
+          "description": "前往淺草：搭乘JR中央線快速至神田轉銀座線 (約20-25分鐘)",
           "location": "新宿 - 淺草",
           "link": null
         },
@@ -164,9 +164,9 @@
         },
         {
           "time": "12:30",
-          "description": "午餐：淺草傳統美食 (如大黑家天婦羅、淺草今半壽喜燒)",
+          "description": "午餐：大黑家天婦羅 (淺草傳統美食)",
           "location": "淺草",
-          "link": null
+          "link": "https://www.daikokuya.co.jp/"
         },
         {
           "time": "14:00",
@@ -182,9 +182,9 @@
         },
         {
           "time": "19:00",
-          "description": "晚餐：晴空塔Solamachi餐廳 (多樣選擇)",
+          "description": "晚餐：晴空塔Solamachi餐廳 (多樣選擇) - 例如：利久牛舌 (牛舌料理)",
           "location": "晴空塔Solamachi",
-          "link": "https://www.tokyo-solamachi.jp/"
+          "link": "https://www.tokyo-solamachi.jp/shop/100/"
         },
         {
           "time": "21:00",
@@ -197,131 +197,19 @@
     {
       "date": "2025-08-14",
       "day": 4,
-      "theme": "池袋動漫與購物",
+      "theme": "鎌倉一日遊",
       "accommodation": "新宿區",
       "activities": [
         {
-          "time": "08:30",
+          "time": "08:00",
           "description": "早餐：飯店附近",
           "location": "新宿",
           "link": null
         },
         {
-          "time": "09:30",
-          "description": "前往池袋",
-          "location": "新宿 - 池袋",
-          "link": null
-        },
-        {
-          "time": "10:00",
-          "description": "池袋Sunshine City：水族館、展望台、Namco Namja Town (室內主題樂園)",
-          "location": "池袋Sunshine City",
-          "link": "https://sunshinecity.jp/"
-        },
-        {
-          "time": "12:30",
-          "description": "午餐：Sunshine City內餐廳 或 池袋拉麵激戰區",
-          "location": "Sunshine City/池袋",
-          "link": null
-        },
-        {
-          "time": "14:30",
-          "description": "Animate 池袋本店：動漫周邊商品天堂",
-          "location": "Animate 池袋本店",
-          "link": "https://www.animate.co.jp/shop/ikebukuro/"
-        },
-        {
-          "time": "16:00",
-          "description": "池袋西口公園：散步、感受當地氛圍",
-          "location": "池袋西口公園",
-          "link": null
-        },
-        {
-          "time": "17:00",
-          "description": "Bic Camera 池袋本店：電器購物",
-          "location": "Bic Camera 池袋本店",
-          "link": "https://www.biccamera.com/bc/i/shop/shoplist/shop007.jsp"
-        },
-        {
-          "time": "19:00",
-          "description": "晚餐：池袋東口居酒屋街 或 燒肉店",
-          "location": "池袋",
-          "link": null
-        },
-        {
-          "time": "21:00",
-          "description": "池袋唐吉訶德：藥妝、零食購物",
-          "location": "池袋唐吉訶德",
-          "link": "https://www.donki.com/store/shop_detail.php?shop_id=10"
-        }
-      ]
-    },
-    {
-      "date": "2025-08-15",
-      "day": 5,
-      "theme": "上野文化與動物園",
-      "accommodation": "上野公園附近",
-      "activities": [
-        {
           "time": "08:30",
-          "description": "早餐：新宿區飯店Check-out，前往上野區飯店Check-in並寄放行李",
-          "location": "新宿 - 上野",
-          "link": null
-        },
-        {
-          "time": "10:00",
-          "description": "上野公園：東京國立博物館、國立西洋美術館 (依個人喜好選擇參觀)",
-          "location": "上野公園",
-          "link": "https://www.ueno.or.jp/"
-        },
-        {
-          "time": "12:30",
-          "description": "午餐：上野公園周邊餐廳 或 阿美橫丁小吃",
-          "location": "上野",
-          "link": null
-        },
-        {
-          "time": "14:00",
-          "description": "上野動物園：參觀可愛動物 (特別是熊貓)",
-          "location": "上野動物園",
-          "link": "https://www.tokyo-zoo.net/zoo/ueno/"
-        },
-        {
-          "time": "17:00",
-          "description": "阿美橫丁：體驗庶民風情、海鮮、零食、藥妝購物",
-          "location": "阿美橫丁",
-          "link": "https://www.ameyoko.net/"
-        },
-        {
-          "time": "19:00",
-          "description": "晚餐：阿美橫丁居酒屋 或 上野車站附近餐廳",
-          "location": "上野",
-          "link": null
-        },
-        {
-          "time": "21:00",
-          "description": "上野周邊散步",
-          "location": "上野",
-          "link": null
-        }
-      ]
-    },
-    {
-      "date": "2025-08-16",
-      "day": 6,
-      "theme": "鎌倉一日遊與埼玉演唱會",
-      "accommodation": "上野公園附近",
-      "activities": [
-        {
-          "time": "08:00",
-          "description": "早餐：飯店附近",
-          "location": "上野",
-          "link": null
-        },
-        {
-          "time": "08:30",
-          "description": "前往鎌倉 (約1小時車程，搭乘JR橫須賀線)",
-          "location": "東京 - 鎌倉",
+          "description": "前往鎌倉 (搭乘JR湘南新宿線，約60分鐘)",
+          "location": "新宿 - 鎌倉",
           "link": null
         },
         {
@@ -338,9 +226,9 @@
         },
         {
           "time": "12:30",
-          "description": "午餐：鎌倉小町通美食 (海鮮丼、蕎麥麵)",
+          "description": "午餐：鎌倉小町通美食 (海鮮丼、蕎麥麵) - 例如：鎌倉釜飯かまかま",
           "location": "鎌倉小町通",
-          "link": "https://www.tripadvisor.com.tw/Attraction_Review-g298171-d1372400-Reviews-Komachi_dori-Kamakura_Kanagawa_Prefecture_Kanto.html"
+          "link": "https://tabelog.com/kanagawa/A1404/A140402/14000001/"
         },
         {
           "time": "14:00",
@@ -349,20 +237,114 @@
           "link": "https://www.hachimangu.or.jp/"
         },
         {
-          "time": "15:30",
-          "description": "返回東京，並前往埼玉競技場",
-          "location": "鎌倉 - 埼玉競技場",
+          "time": "16:00",
+          "description": "返回新宿 (搭乘JR湘南新宿線，約60分鐘)",
+          "location": "鎌倉 - 新宿",
           "link": null
         },
         {
-          "time": "18:00",
-          "description": "埼玉超級競技場：演唱會",
+          "time": "19:00",
+          "description": "晚餐：新宿思い出橫丁 (懷舊小巷美食) 或 歌舞伎町特色居酒屋 - 例如：鳥茂 (燒鳥)",
+          "location": "新宿思い出橫丁/歌舞伎町",
+          "link": "https://tabelog.com/tokyo/A1304/A130401/13000780/"
+        }
+      ]
+    },
+    {
+      "date": "2025-08-15",
+      "day": 5,
+      "theme": "上野文化與秋葉原動漫",
+      "accommodation": "上野公園附近",
+      "activities": [
+        {
+          "time": "08:30",
+          "description": "早餐：新宿區飯店Check-out，前往上野區飯店Check-in並寄放行李 (搭乘JR山手線約20分鐘)",
+          "location": "新宿 - 上野",
+          "link": null
+        },
+        {
+          "time": "10:00",
+          "description": "上野公園：東京國立博物館、國立西洋美術館 (依個人喜好選擇參觀)",
+          "location": "上野公園",
+          "link": "https://www.ueno.or.jp/"
+        },
+        {
+          "time": "12:30",
+          "description": "午餐：上野公園周邊餐廳 或 阿美橫丁小吃 - 例如：肉の大山 (炸肉餅)",
+          "location": "上野",
+          "link": "https://tabelog.com/tokyo/A1311/A131101/13003620/"
+        },
+        {
+          "time": "14:00",
+          "description": "前往秋葉原 (搭乘JR山手線或京濱東北線，約5分鐘)",
+          "location": "上野 - 秋葉原",
+          "link": null
+        },
+        {
+          "time": "14:30",
+          "description": "秋葉原電器街：Yodobashi Akiba、Sofmap (電器、電子產品)",
+          "location": "秋葉原",
+          "link": "https://www.yodobashi.com/store/1100001/"
+        },
+        {
+          "time": "17:00",
+          "description": "秋葉原動漫周邊店：Animate、Mandarake、Volks (模型、漫畫、遊戲)",
+          "location": "秋葉原",
+          "link": "https://www.animate.co.jp/shop/akihabara/"
+        },
+        {
+          "time": "19:00",
+          "description": "晚餐：秋葉原女僕咖啡廳體驗 或 咖哩飯 - 例如：Gundam Cafe (鋼彈咖啡廳)",
+          "location": "秋葉原",
+          "link": "https://gundam-cafe.jp/"
+        },
+        {
+          "time": "21:00",
+          "description": "返回上野飯店",
+          "location": "秋葉原 - 上野",
+          "link": null
+        }
+      ]
+    },
+    {
+      "date": "2025-08-16",
+      "day": 6,
+      "theme": "上野與埼玉競技場",
+      "accommodation": "上野公園附近",
+      "activities": [
+        {
+          "time": "08:30",
+          "description": "早餐：飯店附近",
+          "location": "上野",
+          "link": null
+        },
+        {
+          "time": "09:30",
+          "description": "上野公園：東京國立博物館、國立西洋美術館 (依個人喜好選擇參觀)",
+          "location": "上野公園",
+          "link": "https://www.ueno.or.jp/"
+        },
+        {
+          "time": "12:30",
+          "description": "午餐：上野公園周邊餐廳 或 阿美橫丁小吃 - 例如：一蘭拉麵 上野店",
+          "location": "上野",
+          "link": "https://ichiran.com/shop/kanto/ueno/"
+        },
+        {
+          "time": "14:00",
+          "description": "前往埼玉超級競技場 (搭乘JR京濱東北線至浦和轉JR武藏野線至埼玉新都心，約40-50分鐘)",
+          "location": "上野 - 埼玉競技場",
+          "link": null
+        },
+        {
+          "time": "15:00",
+          "description": "埼玉超級競技場：演唱會 (提前抵達)",
           "location": "埼玉超級競技場",
           "link": "https://www.saitama-arena.co.jp/"
         },
         {
           "time": "21:00",
-          "description": "晚餐：演唱會結束後在埼玉或返回東京後用餐",
+          "description": "晚餐：演唱會結束後在埼玉或返回東京後用餐 - 例如：埼玉新都心車站周邊餐廳",
           "location": "埼玉/東京",
           "link": null
         }
@@ -371,7 +353,7 @@
     {
       "date": "2025-08-17",
       "day": 7,
-      "theme": "秋葉原與銀座、離開東京",
+      "theme": "輕鬆購物與機場",
       "accommodation": "無",
       "activities": [
         {
@@ -382,49 +364,31 @@
         },
         {
           "time": "09:30",
-          "description": "前往秋葉原",
-          "location": "上野 - 秋葉原",
+          "description": "上野阿美橫丁：最後採買伴手禮、藥妝",
+          "location": "阿美橫丁",
+          "link": "https://www.ameyoko.net/"
+        },
+        {
+          "time": "12:00",
+          "description": "午餐：上野車站附近餐廳 - 例如：Hard Rock Cafe 上野店",
+          "location": "上野",
+          "link": "https://www.hardrockcafe.com/location/tokyo-ueno/"
+        },
+        {
+          "time": "13:30",
+          "description": "返回飯店取行李，前往東京成田機場 (搭乘京成Skyliner約45分鐘)",
+          "location": "上野 - 成田機場",
+          "link": "https://www.keisei.co.jp/keisei/tetudou/skyliner/tc/"
+        },
+        {
+          "time": "14:30",
+          "description": "東京成田機場 (NRT) 辦理登機手續 (預計17:30班機，提前三小時抵達)",
+          "location": "成田機場",
           "link": null
         },
         {
-          "time": "10:00",
-          "description": "秋葉原電器街：Yodobashi Akiba、Sofmap (電器、電子產品)",
-          "location": "秋葉原",
-          "link": "https://www.yodobashi.com/store/1100001/"
-        },
-        {
-          "time": "12:30",
-          "description": "午餐：秋葉原女僕咖啡廳體驗 或 咖哩飯",
-          "location": "秋葉原",
-          "link": null
-        },
-        {
-          "time": "14:00",
-          "description": "秋葉原動漫周邊店：Animate、Mandarake、Volks (模型、漫畫、遊戲)",
-          "location": "秋葉原",
-          "link": "https://www.animate.co.jp/shop/akihabara/"
-        },
-        {
-          "time": "16:00",
-          "description": "前往銀座",
-          "location": "秋葉原 - 銀座",
-          "link": null
-        },
-        {
-          "time": "16:30",
-          "description": "銀座：高級百貨公司、品牌旗艦店、歌舞伎座 (外觀)",
-          "location": "銀座",
-          "link": "https://www.ginza.jp/"
-        },
-        {
-          "time": "18:00",
-          "description": "前往東京成田機場 (建議預留充足時間)",
-          "location": "銀座 - 成田機場",
-          "link": null
-        },
-        {
-          "time": "19:30",
-          "description": "東京成田機場 (NRT) 離開東京 (請提早抵達機場辦理登機手續)",
+          "time": "17:30",
+          "description": "離開東京",
           "location": "成田機場",
           "link": null
         }
