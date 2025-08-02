@@ -32,6 +32,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (activity.link) {
                     descriptionHtml = `<a href="${activity.link}" target="_blank">${descriptionHtml}</a>`;
                 }
+                if (activity.image_link) {
+                    descriptionHtml += `<br><img src="${activity.image_link}" alt="${activity.description}" style="max-width: 100px; max-height: 100px; margin-top: 5px; border-radius: 4px;">`;
+                }
                 listItem.innerHTML = `<strong>${activity.time}</strong> ${descriptionHtml}`;
                 activitiesList.appendChild(listItem);
             });
