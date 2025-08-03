@@ -1,7 +1,7 @@
 {
   "trip_name": "東京七日遊",
   "start_date": "2025-08-11",
-  "end_date": "2025-08-17",
+  "end_date": "2025-08-18",
   "travelers": [
     {
       "name": "旅客1"
@@ -17,77 +17,77 @@
     {
       "date": "2025-08-11",
       "day": 1,
-      "theme": "抵達與新宿初探",
-      "accommodation": "新宿區",
+      "theme": "抵達與葛西周邊探索",
+      "accommodation": "Ｍｉｎｎ葛西",
       "activities": [
         {
           "time": "04:25",
           "description": "抵達東京羽田機場 (IT 216)",
           "location": "羽田機場",
-          "link": null,
+          "link": "https://tokyo-haneda.com/zh-CHT/",
           "image_link": null
         },
         {
           "time": "06:00",
-          "description": "機場交通：搭乘京急線至品川轉JR山手線前往新宿 (約60-70分鐘，含轉乘)",
-          "location": "羽田機場 - 新宿",
+          "description": "機場交通：搭乘利木津巴士或電車前往葛西 (約60-90分鐘，視交通方式而定)",
+          "location": "羽田機場 - Ｍｉｎｎ葛西",
           "link": "https://www.limousinebus.co.jp/ch2/platform_searches/index/4/21",
           "image_link": null
         },
         {
           "time": "08:00",
           "description": "飯店Check-in並寄放行李",
-          "location": "新宿區飯店",
-          "link": null,
+          "location": "Ｍｉｎｎ葛西",
+          "link": "https://minn.jp/zh-tw/kasai/",
           "image_link": null
         },
         {
           "time": "09:00",
-          "description": "早餐：新宿Lumine Est百貨美食街 (多樣選擇)",
-          "location": "新宿Lumine Est",
-          "link": "https://www.lumine.ne.jp/est/",
+          "description": "早餐：葛西車站周邊咖啡廳或便利商店",
+          "location": "葛西",
+          "link": null,
           "image_link": null
         },
         {
           "time": "10:00",
-          "description": "新宿御苑：在城市綠洲中放鬆身心，享受早晨的寧靜",
-          "location": "新宿御苑",
-          "link": "https://www.env.go.jp/garden/shinjukugyoen/index.html",
-          "image_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Shinjuku_Gyoen_National_Garden_in_Tokyo.jpg/1280px-Shinjuku_Gyoen_National_Garden_in_Tokyo.jpg"
+          "description": "葛西臨海公園：日本最大的摩天輪、鳥類園、水族園 (可依個人喜好選擇)",
+          "location": "葛西臨海公園",
+          "link": "https://www.tokyo-park.or.jp/park/format/index026.html",
+          "image_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Kasai_Rinkai_Park_Ferris_Wheel.jpg/1280px-Kasai_Rinkai_Park_Ferris_Wheel.jpg"
         },
         {
           "time": "12:30",
-          "description": "午餐：新宿Lumine Est百貨美食街 (多樣選擇)",
-          "location": "新宿Lumine Est",
-          "link": "https://www.lumine.ne.jp/est/",
+          "description": "午餐：葛西臨海公園周邊餐廳或葛西車站附近美食",
+          "location": "葛西",
+          "link": null,
           "image_link": null
         },
         {
           "time": "14:00",
-          "description": "新宿都廳展望室：免費俯瞰東京全景",
-          "location": "新宿都廳",
-          "link": "https://www.yokoso.metro.tokyo.lg.jp/tenbou/index.html",
-          "image_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Tokyo_Metropolitan_Government_Building_at_night.jpg/1280px-Tokyo_Metropolitan_Government_Building_at_night.jpg"
+          "description": "地下鐵博物館：了解東京地鐵歷史與發展",
+          "location": "地下鐵博物館",
+          "link": "https://www.tokyometro.jp/museum/",
+          "image_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Tokyo_Metro_Museum_exterior.jpg/1280px-Tokyo_Metro_Museum_exterior.jpg"
         },
         {
           "time": "16:00",
-          "description": "新宿黃金街/歌舞伎町：體驗東京夜生活氛圍 (可依個人喜好選擇)",
-          "location": "新宿黃金街/歌舞伎町",
-          "link": "https://www.gotokyo.org/tc/destinations/shinjuku/kabukicho/index.html",
+          "description": "葛西周邊購物：AEON 永旺夢樂城葛西店 (大型購物中心)",
+          "location": "葛西",
+          "link": "https://www.aeon.jp/sc/kasai/",
           "image_link": null
         },
         {
           "time": "19:00",
-          "description": "晚餐：新宿思い出橫丁 (懷舊小巷美食) 或 歌舞伎町特色居酒屋 - 例如：鳥茂 (燒鳥)",
-          "location": "新宿思い出橫丁/歌舞伎町",
-          "link": "https://tabelog.com/tokyo/A1304/A130401/13000780/",
+          "description": "晚餐：葛西車站周邊居酒屋或餐廳",
+          "location": "葛西",
+          "link": null,
           "image_link": null
         },
         {
           "time": "21:00",
-          "description": "新宿逛街：BIC CAMERA 或 唐吉訶德 (購物)",
-          "location": "新宿",
-          "link": "https://www.biccamera.com/",
+          "description": "返回飯店休息",
+          "location": "Ｍｉｎｎ葛西",
+          "link": null,
           "image_link": null
         }
       ]
@@ -96,59 +96,59 @@
       "date": "2025-08-12",
       "day": 2,
       "theme": "澀谷與原宿潮流",
-      "accommodation": "新宿區",
+      "accommodation": "Ｍｉｎｎ葛西",
       "activities": [
         {
           "time": "08:30",
-          "description": "早餐：新宿車站周邊連鎖咖啡廳 (如星巴克、Doutor)",
-          "location": "新宿",
+          "description": "早餐：飯店附近或葛西車站周邊",
+          "location": "Ｍｉｎｎ葛西/葛西",
           "link": null,
           "image_link": null
         },
         {
           "time": "09:30",
-          "description": "前往澀谷：搭乘JR山手線 (約7分鐘)",
-          "location": "新宿 - 澀谷",
+          "description": "前往澀谷：搭乘東京Metro東西線至大手町轉半藏門線 (約40-50分鐘)",
+          "location": "葛西 - 澀谷",
           "link": null,
           "image_link": null
         },
         {
-          "time": "10:00",
+          "time": "10:30",
           "description": "澀谷：忠犬八公像、澀谷交叉路口 (體驗人潮)、澀谷109百貨 (潮流服飾)",
           "location": "澀谷",
           "link": "https://www.shibuya109.jp/",
           "image_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Shibuya_Crossing_at_night.jpg/1280px-Shibuya_Crossing_at_night.jpg"
         },
         {
-          "time": "12:30",
+          "time": "13:00",
           "description": "午餐：澀谷Hikarie百貨美食街 (多樣選擇)",
           "location": "澀谷Hikarie",
           "link": "https://www.hikarie.jp/",
           "image_link": null
         },
         {
-          "time": "14:00",
+          "time": "14:30",
           "description": "原宿：竹下通 (年輕潮流、可麗餅)、明治神宮 (莊嚴神聖)、表參道 (精品大道)",
           "location": "原宿",
           "link": "https://www.takeshita-street.com/",
           "image_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Meiji_Jingu_Shrine_Torii_Gate.jpg/1280px-Meiji_Jingu_Shrine_Torii_Gate.jpg"
         },
         {
-          "time": "17:00",
+          "time": "17:30",
           "description": "LINE FRIENDS STORE 原宿店 (可愛周邊商品)",
           "location": "原宿",
           "link": "https://www.linefriends.com/store/harajuku",
           "image_link": null
         },
         {
-          "time": "19:00",
+          "time": "19:30",
           "description": "晚餐：澀谷橫丁 (多樣日式小吃、居酒屋)",
           "location": "澀谷橫丁",
           "link": "https://shibuya-yokocho.com/",
           "image_link": null
         },
         {
-          "time": "21:00",
+          "time": "21:30",
           "description": "澀谷PARCO：逛街、任天堂東京店",
           "location": "澀谷PARCO",
           "link": "https://shibuya.parco.jp/shop/detail/?cd=025790",
@@ -160,24 +160,24 @@
       "date": "2025-08-13",
       "day": 3,
       "theme": "淺草與花やしき",
-      "accommodation": "新宿區",
+      "accommodation": "Ｍｉｎｎ葛西",
       "activities": [
         {
           "time": "08:30",
-          "description": "早餐：飯店附近或前往淺草途中",
-          "location": "新宿/淺草",
+          "description": "早餐：飯店附近或葛西車站周邊",
+          "location": "Ｍｉｎｎ葛西/葛西",
           "link": null,
           "image_link": null
         },
         {
           "time": "09:30",
-          "description": "前往淺草：搭乘JR中央線快速至神田轉銀座線 (約20-25分鐘)",
-          "location": "新宿 - 淺草",
+          "description": "前往淺草：搭乘東京Metro東西線至日本橋轉淺草線 (約30-40分鐘)",
+          "location": "葛西 - 淺草",
           "link": null,
           "image_link": null
         },
         {
-          "time": "10:00",
+          "time": "10:30",
           "description": "淺草寺：雷門、仲見世商店街 (購買伴手禮、小吃)",
           "location": "淺草寺",
           "link": "https://www.senso-ji.jp/",
@@ -185,7 +185,7 @@
         },
         {
           "time": "12:30",
-          "description": "午餐：大黑家天婦羅 (淺草傳統美食)",
+          "description": "午餐：大黑家天婦羅 (淺草傳統美食) 或 淺草周邊餐廳",
           "location": "淺草",
           "link": "https://www.daikokuya.co.jp/",
           "image_link": null
@@ -224,66 +224,66 @@
       "date": "2025-08-14",
       "day": 4,
       "theme": "池袋動漫與購物",
-      "accommodation": "新宿區",
+      "accommodation": "Ｍｉｎｎ葛西",
       "activities": [
         {
           "time": "08:30",
-          "description": "早餐：飯店附近",
-          "location": "新宿",
+          "description": "早餐：飯店附近或葛西車站周邊",
+          "location": "Ｍｉｎｎ葛西/葛西",
           "link": null,
           "image_link": null
         },
         {
           "time": "09:30",
-          "description": "前往池袋：搭乘JR山手線 (約10分鐘)",
-          "location": "新宿 - 池袋",
+          "description": "前往池袋：搭乘東京Metro東西線至飯田橋轉有樂町線 (約40-50分鐘)",
+          "location": "葛西 - 池袋",
           "link": null,
           "image_link": null
         },
         {
-          "time": "10:00",
+          "time": "10:30",
           "description": "太陽城 Sunshine City：水族館、展望台、購物中心 (可依個人喜好選擇)",
           "location": "池袋",
           "link": "https://sunshinecity.jp/",
           "image_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Sunshine_City_Ikebukuro.jpg/1280px-Sunshine_City_Ikebukuro.jpg"
         },
         {
-          "time": "12:30",
+          "time": "13:00",
           "description": "午餐：無敵家拉麵 (知名排隊拉麵店) 或 東武/西武百貨美食街",
           "location": "池袋",
           "link": "https://www.mutekiya.com/",
           "image_link": null
         },
         {
-          "time": "14:00",
+          "time": "14:30",
           "description": "Animate 池袋本店：動漫周邊商品、漫畫、遊戲",
           "location": "池袋",
           "link": "https://www.animate.co.jp/shop/ikebukuro/",
           "image_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Animate_Ikebukuro_Main_Store.jpg/1280px-Animate_Ikebukuro_Main_Store.jpg"
         },
         {
-          "time": "16:00",
+          "time": "16:30",
           "description": "池袋西口公園：文化交流場所，有時有活動",
           "location": "池袋西口公園",
           "link": "https://ikebukuro-westgatepark.jp/",
           "image_link": null
         },
         {
-          "time": "17:30",
+          "time": "18:00",
           "description": "貓頭鷹咖啡廳 (例如：Ikefukuro Cafe) (可依個人喜好選擇)",
           "location": "池袋",
           "link": "https://ikefukurocafe.com/",
           "image_link": null
         },
         {
-          "time": "19:00",
+          "time": "19:30",
           "description": "晚餐：Eggs 'n Things 池袋店 (夏威夷鬆餅) 或 池袋車站周邊餐廳",
           "location": "池袋",
           "link": "https://www.eggsnthingsjapan.com/",
           "image_link": null
         },
         {
-          "time": "21:00",
+          "time": "21:30",
           "description": "池袋逛街：BIC CAMERA 或 Yamada Denki (電器、藥妝)",
           "location": "池袋",
           "link": "https://www.biccamera.com/bc/com/index.jsp",
@@ -295,62 +295,62 @@
       "date": "2025-08-15",
       "day": 5,
       "theme": "鎌倉一日遊",
-      "accommodation": "新宿區",
+      "accommodation": "お茶の水ホテルジュラク",
       "activities": [
         {
           "time": "08:00",
-          "description": "早餐：飯店附近",
-          "location": "新宿",
+          "description": "早餐：飯店附近或葛西車站周邊",
+          "location": "Ｍｉｎｎ葛西/葛西",
           "link": null,
           "image_link": null
         },
         {
           "time": "08:30",
-          "description": "前往鎌倉 (搭乘JR湘南新宿線，約60分鐘)",
-          "location": "新宿 - 鎌倉",
+          "description": "前往鎌倉 (搭乘東京Metro東西線至大手町轉JR橫須賀線，約70-80分鐘)",
+          "location": "葛西 - 鎌倉",
           "link": null,
           "image_link": null
         },
         {
-          "time": "09:30",
+          "time": "10:00",
           "description": "鎌倉大佛：高德院",
           "location": "鎌倉大佛",
           "link": "https://www.kotoku-in.jp/",
           "image_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Great_Buddha_of_Kamakura.jpg/1280px-Great_Buddha_of_Kamakura.jpg"
         },
         {
-          "time": "11:00",
+          "time": "11:30",
           "description": "長谷寺：繡球花 (季節限定)、觀音像",
           "location": "長谷寺",
           "link": "https://www.hasedera.jp/",
           "image_link": null
         },
         {
-          "time": "12:30",
+          "time": "13:00",
           "description": "午餐：鎌倉小町通美食 (海鮮丼、蕎麥麵) - 例如：鎌倉釜飯かまかま",
           "location": "鎌倉小町通",
           "link": "https://tabelog.com/kanagawa/A1404/A140402/14000001/",
           "image_link": null
         },
         {
-          "time": "14:00",
+          "time": "14:30",
           "description": "鶴岡八幡宮：鎌倉主要神社",
           "location": "鶴岡八幡宮",
           "link": "https://www.hachimangu.or.jp/",
           "image_link": null
         },
         {
-          "time": "16:00",
-          "description": "返回新宿 (搭乘JR湘南新宿線，約60分鐘)",
-          "location": "鎌倉 - 新宿",
+          "time": "16:30",
+          "description": "返回お茶の水ホテルジュラク (搭乘JR橫須賀線至東京轉JR中央線快速，約60-70分鐘)",
+          "location": "鎌倉 - お茶の水ホテルジュラク",
           "link": null,
           "image_link": null
         },
         {
           "time": "19:00",
-          "description": "晚餐：新宿思い出橫丁 (懷舊小巷美食) 或 歌舞伎町特色居酒屋 - 例如：鳥茂 (燒鳥)",
-          "location": "新宿思い出橫丁/歌舞伎町",
-          "link": "https://tabelog.com/tokyo/A1304/A130401/13000780/",
+          "description": "晚餐：お茶の水車站周邊餐廳",
+          "location": "お茶の水",
+          "link": null,
           "image_link": null
         }
       ]
@@ -359,7 +359,7 @@
       "date": "2025-08-16",
       "day": 6,
       "theme": "上野與埼玉競技場",
-      "accommodation": "上野公園附近",
+      "accommodation": "お茶の水ホテルジュラク",
       "activities": [
         {
           "time": "08:30",
@@ -384,8 +384,8 @@
         },
         {
           "time": "14:00",
-          "description": "前往埼玉超級競技場 (搭乘JR京濱東北線至浦和轉JR武藏野線至埼玉新都心，約40-50分鐘)",
-          "location": "上野 - 埼玉競技場",
+          "description": "前往埼玉超級競技場 (搭乘JR中央線快速至新宿轉JR埼京線至武藏浦和轉JR武藏野線至埼玉新都心，約50-60分鐘)",
+          "location": "お茶の水 - 埼玉競技場",
           "link": null,
           "image_link": null
         },
@@ -399,7 +399,7 @@
         {
           "time": "21:00",
           "description": "晚餐：演唱會結束後在埼玉或返回東京後用餐 - 例如：埼玉新都心車站周邊餐廳",
-          "location": "埼玉/東京",
+          "location": "埼玉/お茶の水",
           "link": null,
           "image_link": null
         }
@@ -408,47 +408,104 @@
     {
       "date": "2025-08-17",
       "day": 7,
-      "theme": "輕鬆購物與機場",
-      "accommodation": "無",
+      "theme": "東京市區觀光與購物",
+      "accommodation": "お茶の水ホテルジュラク",
       "activities": [
         {
           "time": "08:30",
-          "description": "早餐：飯店附近",
-          "location": "上野",
+          "description": "早餐：飯店附近或お茶の水車站周邊",
+          "location": "お茶の水",
           "link": null,
           "image_link": null
         },
         {
           "time": "09:30",
-          "description": "上野阿美橫丁：最後採買伴手禮、藥妝",
-          "location": "阿美橫丁",
-          "link": "https://www.ameyoko.net/",
+          "description": "秋葉原電器街：動漫、電器、遊戲 (步行或搭乘JR中央線快速一站)",
+          "location": "秋葉原",
+          "link": "https://akihabara-japan.com/",
           "image_link": null
         },
         {
-          "time": "12:00",
-          "description": "午餐：上野車站附近餐廳 - 例如：Hard Rock Cafe 上野店",
-          "location": "上野",
-          "link": "https://www.hardrockcafe.com/location/tokyo-ueno/",
-          "image_link": null
-        },
-        {
-          "time": "13:30",
-          "description": "返回飯店取行李，前往東京成田機場 (搭乘京成Skyliner約45分鐘)",
-          "location": "上野 - 成田機場",
-          "link": "https://www.keisei.co.jp/keisei/tetudou/skyliner/tc/",
-          "image_link": null
-        },
-        {
-          "time": "14:30",
-          "description": "東京成田機場 (NRT) 辦理登機手續 (預計17:30班機，提前三小時抵達)",
-          "location": "成田機場",
+          "time": "12:30",
+          "description": "午餐：秋葉原特色餐廳 (例如：女僕咖啡廳、拉麵)",
+          "location": "秋葉原",
           "link": null,
           "image_link": null
         },
         {
-          "time": "17:30",
-          "description": "離開東京",
+          "time": "14:00",
+          "description": "東京車站：丸之內口、一番街 (伴手禮、美食)",
+          "location": "東京車站",
+          "link": "https://www.tokyostationcity.com/",
+          "image_link": null
+        },
+        {
+          "time": "16:00",
+          "description": "銀座：高級百貨、精品店 (搭乘JR山手線至有樂町站步行)",
+          "location": "銀座",
+          "link": "https://www.ginza.jp/",
+          "image_link": null
+        },
+        {
+          "time": "19:00",
+          "description": "晚餐：銀座特色餐廳",
+          "location": "銀座",
+          "link": null,
+          "image_link": null
+        },
+        {
+          "time": "21:00",
+          "description": "返回飯店休息，整理行李",
+          "location": "お茶の水ホテルジュラク",
+          "link": null,
+          "image_link": null
+        }
+      ]
+    },
+    {
+      "date": "2025-08-18",
+      "day": 8,
+      "theme": "返程",
+      "accommodation": "無",
+      "activities": [
+        {
+          "time": "09:00",
+          "description": "早餐：飯店附近",
+          "location": "お茶の水",
+          "link": null,
+          "image_link": null
+        },
+        {
+          "time": "10:00",
+          "description": "自由活動/最後採買：可在お茶の水或東京車站周邊進行",
+          "location": "お茶の水/東京車站",
+          "link": null,
+          "image_link": null
+        },
+        {
+          "time": "12:00",
+          "description": "午餐：東京車站或飯店附近",
+          "location": "東京車站/お茶の水",
+          "link": null,
+          "image_link": null
+        },
+        {
+          "time": "14:00",
+          "description": "返回飯店取行李，前往東京成田機場 (搭乘JR中央線快速至東京轉成田特快N'EX，約70-80分鐘)",
+          "location": "お茶の水 - 成田機場",
+          "link": "https://www.jreast.co.jp/multi/zh-CHT/pass/nex.html",
+          "image_link": null
+        },
+        {
+          "time": "16:00",
+          "description": "東京成田機場 (NRT) 辦理登機手續 (預計19:30班機，提前三小時抵達)",
+          "location": "成田機場",
+          "link": "https://www.narita-airport.jp/ch2/",
+          "image_link": null
+        },
+        {
+          "time": "19:30",
+          "description": "離開東京 (班機時間)",
           "location": "成田機場",
           "link": null,
           "image_link": null
