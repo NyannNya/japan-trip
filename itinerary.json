@@ -1,5 +1,5 @@
 {
-  "trip_name": "東京七日遊",
+  "trip_name": "東京八日遊",
   "start_date": "2025-08-11",
   "end_date": "2025-08-18",
   "travelers": [
@@ -53,7 +53,7 @@
           "description": "葛西臨海公園：日本最大的摩天輪、鳥類園、水族園 (可依個人喜好選擇)",
           "location": "葛西臨海公園",
           "link": "https://www.tokyo-park.or.jp/park/format/index026.html",
-          "image_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Kasai_Rinkai_Park_Ferris_Wheel.jpg/1280px-Kasai_Rinkai_Park_Ferris_Wheel.jpg"
+          "image_link": null
         },
         {
           "time": "12:30",
@@ -67,7 +67,7 @@
           "description": "地下鐵博物館：了解東京地鐵歷史與發展",
           "location": "地下鐵博物館",
           "link": "https://www.tokyometro.jp/museum/",
-          "image_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Tokyo_Metro_Museum_exterior.jpg/1280px-Tokyo_Metro_Museum_exterior.jpg"
+          "image_link": null
         },
         {
           "time": "16:00",
@@ -117,7 +117,7 @@
           "description": "澀谷：忠犬八公像、澀谷交叉路口 (體驗人潮)、澀谷109百貨 (潮流服飾)",
           "location": "澀谷",
           "link": "https://www.shibuya109.jp/",
-          "image_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Shibuya_Crossing_at_night.jpg/1280px-Shibuya_Crossing_at_night.jpg"
+          "image_link": null
         },
         {
           "time": "13:00",
@@ -131,7 +131,7 @@
           "description": "原宿：竹下通 (年輕潮流、可麗餅)、明治神宮 (莊嚴神聖)、表參道 (精品大道)",
           "location": "原宿",
           "link": "https://www.takeshita-street.com/",
-          "image_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Meiji_Jingu_Shrine_Torii_Gate.jpg/1280px-Meiji_Jingu_Shrine_Torii_Gate.jpg"
+          "image_link": null
         },
         {
           "time": "17:30",
@@ -181,7 +181,7 @@
           "description": "淺草寺：雷門、仲見世商店街 (購買伴手禮、小吃)",
           "location": "淺草寺",
           "link": "https://www.senso-ji.jp/",
-          "image_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Senso-ji_Temple_Kaminarimon.jpg/1280px-Senso-ji_Temple_Kaminarimon.jpg"
+          "image_link": null
         },
         {
           "time": "12:30",
@@ -202,7 +202,7 @@
           "description": "東京晴空塔：登塔俯瞰東京全景 (建議預約)",
           "location": "東京晴空塔",
           "link": "https://www.tokyo-skytree.jp/",
-          "image_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Tokyo_Skytree_at_night.jpg/1280px-Tokyo_Skytree_at_night.jpg"
+          "image_link": null
         },
         {
           "time": "19:00",
@@ -245,7 +245,7 @@
           "description": "太陽城 Sunshine City：水族館、展望台、購物中心 (可依個人喜好選擇)",
           "location": "池袋",
           "link": "https://sunshinecity.jp/",
-          "image_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Sunshine_City_Ikebukuro.jpg/1280px-Sunshine_City_Ikebukuro.jpg"
+          "image_link": null
         },
         {
           "time": "13:00",
@@ -259,7 +259,7 @@
           "description": "Animate 池袋本店：動漫周邊商品、漫畫、遊戲",
           "location": "池袋",
           "link": "https://www.animate.co.jp/shop/ikebukuro/",
-          "image_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Animate_Ikebukuro_Main_Store.jpg/1280px-Animate_Ikebukuro_Main_Store.jpg"
+          "image_link": null
         },
         {
           "time": "16:30",
@@ -316,7 +316,7 @@
           "description": "鎌倉大佛：高德院",
           "location": "鎌倉大佛",
           "link": "https://www.kotoku-in.jp/",
-          "image_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Great_Buddha_of_Kamakura.jpg/1280px-Great_Buddha_of_Kamakura.jpg"
+          "image_link": null
         },
         {
           "time": "11:30",
