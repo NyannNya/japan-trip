@@ -7,7 +7,6 @@
 - `style.css`: 網頁樣式表。
 - `script.js`: 負責讀取 `itinerary.json` 並生成行程內容的 JavaScript 檔案。
 - `itinerary.json`: 包含詳細行程規劃的 JSON 資料檔案。
-- `itinerary.yaml`: 原始的 YAML 行程檔案 (已不再被網頁使用)。
 
 ## 如何部署到 GitHub Pages
 
