@@ -44,10 +44,24 @@ document.addEventListener('DOMContentLoaded', () => {
                         if (activity.link) {
                             descriptionHtml = `<a href="${activity.link}" target="_blank">${descriptionHtml}</a>`;
                         }
-                        if (activity.map_url) {
-                            descriptionHtml += `<div style="text-align: right;"><a href="${activity.map_url}" target="_blank" style="margin-top: 5px; display: inline-block;">查看地圖/路線</a></div>`;
+                        let linkHtml = '';
+                        if (activity.link) {
+                            linkHtml = `<a href="${activity.link}" target="_blank">${activity.description} (${activity.location})</a>`;
+                        } else {
+                            linkHtml = `<span>${activity.description} (${activity.location})</span>`;
                         }
-                        listItem.innerHTML = `<strong>${activity.time}</strong> ${descriptionHtml}`;
+
+                        let mapLinkHtml = '';
+                        if (activity.map_url) {
+                            mapLinkHtml = `<a href="${activity.map_url}" target="_blank" style="font-size: 0.9em; color: #007bff;">查看地圖/路線</a>`;
+                        }
+
+                        listItem.innerHTML = `
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <div><strong>${activity.time}</strong> ${linkHtml}</div>
+                                ${mapLinkHtml ? `<div>${mapLinkHtml}</div>` : ''}
+                            </div>
+                        `;
                         activitiesList.appendChild(listItem);
 
                         if (activity.options && activity.options.length > 0) {
@@ -55,14 +69,24 @@ document.addEventListener('DOMContentLoaded', () => {
                             optionsList.style.marginLeft = '20px'; // Indent options
                             activity.options.forEach(option => {
                                 const optionItem = document.createElement('li');
-                                let optionHtml = `<span>${option.type === 'restaurant' ? '餐廳' : '景點'}: ${option.name}</span>`;
+                                let optionLinkHtml = '';
                                 if (option.link) {
-                                    optionHtml = `<a href="${option.link}" target="_blank">${optionHtml}</a>`;
+                                    optionLinkHtml = `<a href="${option.link}" target="_blank">${option.type === 'restaurant' ? '餐廳' : '景點'}: ${option.name}</a>`;
+                                } else {
+                                    optionLinkHtml = `<span>${option.type === 'restaurant' ? '餐廳' : '景點'}: ${option.name}</span>`;
                                 }
+
+                                let optionMapLinkHtml = '';
                                 if (option.map_url) {
-                                    optionHtml += `<div style="text-align: right;"><a href="${option.map_url}" target="_blank" style="font-size: 0.8em; color: #007bff;">查看地圖/路線</a></div>`;
+                                    optionMapLinkHtml = `<a href="${option.map_url}" target="_blank" style="font-size: 0.8em; color: #007bff;">查看地圖/路線</a>`;
                                 }
-                                optionItem.innerHTML = optionHtml;
+
+                                optionItem.innerHTML = `
+                                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                                        <div>${optionLinkHtml}</div>
+                                        ${optionMapLinkHtml ? `<div>${optionMapLinkHtml}</div>` : ''}
+                                    </div>
+                                `;
                                 optionsList.appendChild(optionItem);
                             });
                             activitiesList.appendChild(optionsList);
@@ -70,6 +94,97 @@ document.addEventListener('DOMContentLoaded', () => {
                     });
                 }
             };
+
+            // Special handling for Day 6 split activities
+            if (day.day === 6 && day.afternoon && day.afternoon.some(act => act.description.includes('分開行動'))) {
+                const splitContainer = document.createElement('div');
+                splitContainer.style.display = 'flex';
+                splitContainer.style.justifyContent = 'space-around';
+                splitContainer.style.width = '100%';
+
+                const sSaitamaGroup = document.createElement('div');
+                sSaitamaGroup.style.flex = '1';
+                sSaitamaGroup.style.paddingRight = '10px';
+                sSaitamaGroup.innerHTML = '<h4>埼玉組</h4><ul></ul>';
+                const sSaitamaList = sSaitamaGroup.querySelector('ul');
+
+                const sDateGroup = document.createElement('div');
+                sDateGroup.style.flex = '1';
+                sDateGroup.style.paddingLeft = '10px';
+                sDateGroup.innerHTML = '<h4>約會組</h4><ul></ul>';
+                const sDateList = sDateGroup.querySelector('ul');
+
+                day.afternoon.forEach(activity => {
+                    const listItem = document.createElement('li');
+                    let linkHtml = '';
+                    if (activity.link) {
+                        linkHtml = `<a href="${activity.link}" target="_blank">${activity.description} (${activity.location})</a>`;
+                    } else {
+                        linkHtml = `<span>${activity.description} (${activity.location})</span>`;
+                    }
+
+                    let mapLinkHtml = '';
+                    if (activity.map_url) {
+                        mapLinkHtml = `<a href="${activity.map_url}" target="_blank" style="font-size: 0.9em; color: #007bff;">查看地圖/路線</a>`;
+                    }
+
+                    listItem.innerHTML = `
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <div><strong>${activity.time}</strong> ${linkHtml}</div>
+                            ${mapLinkHtml ? `<div>${mapLinkHtml}</div>` : ''}
+                        </div>
+                    `;
+
+                    if (activity.description.includes('埼玉組')) {
+                        sSaitamaList.appendChild(listItem);
+                    } else if (activity.description.includes('約會組')) {
+                        sDateList.appendChild(listItem);
+                    } else {
+                        // For the "分開行動" activity itself, add it to the main list or handle as needed
+                        activitiesList.appendChild(listItem);
+                    }
+
+                    if (activity.options && activity.options.length > 0) {
+                        const optionsList = document.createElement('ul');
+                        optionsList.style.marginLeft = '20px'; // Indent options
+                        activity.options.forEach(option => {
+                            const optionItem = document.createElement('li');
+                            let optionLinkHtml = '';
+                            if (option.link) {
+                                optionLinkHtml = `<a href="${option.link}" target="_blank">${option.type === 'restaurant' ? '餐廳' : '景點'}: ${option.name}</a>`;
+                            } else {
+                                optionLinkHtml = `<span>${option.type === 'restaurant' ? '餐廳' : '景點'}: ${option.name}</span>`;
+                            }
+
+                            let optionMapLinkHtml = '';
+                            if (option.map_url) {
+                                optionMapLinkHtml = `<a href="${option.map_url}" target="_blank" style="font-size: 0.8em; color: #007bff;">查看地圖/路線</a>`;
+                            }
+
+                            optionItem.innerHTML = `
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <div>${optionLinkHtml}</div>
+                                    ${optionMapLinkHtml ? `<div>${optionMapLinkHtml}</div>` : ''}
+                                </div>
+                            `;
+                            optionsList.appendChild(optionItem);
+                        });
+                        if (activity.description.includes('埼玉組')) {
+                            sSaitamaList.appendChild(optionsList);
+                        } else if (activity.description.includes('約會組')) {
+                            sDateList.appendChild(optionsList);
+                        }
+                    }
+                });
+
+                splitContainer.appendChild(sSaitamaGroup);
+                splitContainer.appendChild(sDateGroup);
+                activitiesList.appendChild(splitContainer);
+            } else {
+                renderActivities(day.morning, '早上');
+                renderActivities(day.afternoon, '下午');
+                renderActivities(day.evening, '晚上');
+            }
 
             renderActivities(day.morning, '早上');
             renderActivities(day.afternoon, '下午');

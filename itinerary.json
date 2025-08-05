@@ -562,13 +562,14 @@
         },
         {
           "time": "15:00",
-          "description": "約會組：井之頭恩賜公園、吉卜力美術館 (需預約)",
+          "description": "約會組：吉祥寺周邊散步、購物、咖啡廳",
           "location": "吉祥寺",
-          "link": "https://www.ghibli-museum.jp/en/",
-          "map_url": "https://www.google.com/maps/search/?api=1&query=井之頭恩賜公園",
+          "link": null,
+          "map_url": "https://www.google.com/maps/search/?api=1&query=吉祥寺",
           "options": [
-            { "type": "attraction", "name": "井之頭恩賜公園", "link": null, "map_url": "https://www.google.com/maps/search/?api=1&query=井之頭恩賜公園" },
-            { "type": "attraction", "name": "吉卜力美術館", "link": "https://www.ghibli-museum.jp/en/", "map_url": "https://www.google.com/maps/search/?api=1&query=吉卜力美術館" }
+            { "type": "attraction", "name": "井之頭恩賜公園 (散步)", "link": null, "map_url": "https://www.google.com/maps/search/?api=1&query=井之頭恩賜公園" },
+            { "type": "attraction", "name": "吉祥寺商店街 (購物)", "link": null, "map_url": "https://www.google.com/maps/search/?api=1&query=吉祥寺商店街" },
+            { "type": "restaurant", "name": "茶房 武藏野文庫 (咖啡廳)", "link": null, "map_url": "https://www.google.com/maps/search/?api=1&query=茶房武藏野文庫" }
           ]
         }
       ],
@@ -598,7 +599,7 @@
     {
       "date": "2025-08-17",
       "day": 7,
-      "theme": "東京潮流與文化體驗 (朋友行程)",
+      "theme": "東京潮流與文化體驗",
       "accommodation": "お茶の水ホテルジュラク",
       "day_map_link": "https://www.google.com/maps/dir/?api=1&origin=お茶の水&destination=澀谷&waypoints=原宿|新宿|銀座&travelmode=transit&transit_mode=subway",
       "morning": [
