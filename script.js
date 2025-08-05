@@ -44,11 +44,29 @@ document.addEventListener('DOMContentLoaded', () => {
                         if (activity.link) {
                             descriptionHtml = `<a href="${activity.link}" target="_blank">${descriptionHtml}</a>`;
                         }
-                        if (activity.image_link) {
-                            descriptionHtml += `<br><a href="${activity.image_link}" target="_blank" style="margin-top: 5px; display: inline-block;">查看地圖/路線</a>`;
+                        if (activity.map_url) {
+                            descriptionHtml += `<div style="text-align: right;"><a href="${activity.map_url}" target="_blank" style="margin-top: 5px; display: inline-block;">查看地圖/路線</a></div>`;
                         }
                         listItem.innerHTML = `<strong>${activity.time}</strong> ${descriptionHtml}`;
                         activitiesList.appendChild(listItem);
+
+                        if (activity.options && activity.options.length > 0) {
+                            const optionsList = document.createElement('ul');
+                            optionsList.style.marginLeft = '20px'; // Indent options
+                            activity.options.forEach(option => {
+                                const optionItem = document.createElement('li');
+                                let optionHtml = `<span>${option.type === 'restaurant' ? '餐廳' : '景點'}: ${option.name}</span>`;
+                                if (option.link) {
+                                    optionHtml = `<a href="${option.link}" target="_blank">${optionHtml}</a>`;
+                                }
+                                if (option.map_url) {
+                                    optionHtml += `<div style="text-align: right;"><a href="${option.map_url}" target="_blank" style="font-size: 0.8em; color: #007bff;">查看地圖/路線</a></div>`;
+                                }
+                                optionItem.innerHTML = optionHtml;
+                                optionsList.appendChild(optionItem);
+                            });
+                            activitiesList.appendChild(optionsList);
+                        }
                     });
                 }
             };

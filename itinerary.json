@@ -26,35 +26,46 @@
           "description": "抵達東京羽田機場 (IT 216)",
           "location": "羽田機場",
           "link": "https://tokyo-haneda.com/zh-CHT/",
-          "image_link": "https://www.google.com/maps/search/?api=1&query=羽田機場"
+          "map_url": "https://www.google.com/maps/search/?api=1&query=羽田機場",
+          "options": []
         },
         {
           "time": "06:00",
           "description": "機場交通：搭乘利木津巴士或電車前往葛西",
           "location": "羽田機場 - Ｍｉｎｎ葛西",
           "link": "https://www.limousinebus.co.jp/ch2/platform_searches/index/4/21",
-          "image_link": "https://www.google.com/maps/dir/?api=1&origin=羽田機場&destination=Ｍｉｎｎ葛西&travelmode=transit&transit_mode=subway&time=0600"
+          "map_url": "https://www.google.com/maps/dir/?api=1&origin=羽田機場&destination=Ｍｉｎｎ葛西&travelmode=transit&transit_mode=subway&time=0600",
+          "options": []
         },
         {
           "time": "08:00",
           "description": "飯店Check-in並寄放行李",
           "location": "Ｍｉｎｎ葛西",
           "link": "https://minn.jp/zh-tw/kasai/",
-          "image_link": "https://www.google.com/maps/search/?api=1&query=Ｍｉｎｎ葛西"
+          "map_url": "https://www.google.com/maps/search/?api=1&query=Ｍｉｎｎ葛西",
+          "options": []
         },
         {
           "time": "09:00",
           "description": "早餐：葛西車站周邊咖啡廳或便利商店",
           "location": "葛西",
           "link": null,
-          "image_link": "https://www.google.com/maps/search/?api=1&query=葛西"
+          "map_url": "https://www.google.com/maps/search/?api=1&query=葛西",
+          "options": [
+            { "type": "restaurant", "name": "星乃咖啡店 葛西店", "link": "https://www.hoshinocoffee.com/", "map_url": "https://www.google.com/maps/search/?api=1&query=星乃咖啡店葛西店" },
+            { "type": "restaurant", "name": "羅多倫咖啡 葛西店", "link": "https://www.doutor.co.jp/", "map_url": "https://www.google.com/maps/search/?api=1&query=羅多倫咖啡葛西店" }
+          ]
         },
         {
           "time": "10:00",
           "description": "葛西臨海公園：日本最大的摩天輪、鳥類園、水族園",
           "location": "葛西臨海公園",
           "link": "https://www.tokyo-park.or.jp/park/format/index026.html",
-          "image_link": "https://www.google.com/maps/search/?api=1&query=葛西臨海公園"
+          "map_url": "https://www.google.com/maps/search/?api=1&query=葛西臨海公園",
+          "options": [
+            { "type": "attraction", "name": "葛西臨海水族園", "link": "https://www.tokyo-zoo.net/zoo/kasai/", "map_url": "https://www.google.com/maps/search/?api=1&query=葛西臨海水族園" },
+            { "type": "attraction", "name": "鑽石與花大摩天輪", "link": "https://www.tokyo-park.or.jp/park/format/index026.html", "map_url": "https://www.google.com/maps/search/?api=1&query=鑽石與花大摩天輪" }
+          ]
         }
       ],
       "afternoon": [
@@ -63,21 +74,29 @@
           "description": "午餐：葛西臨海公園周邊餐廳或葛西車站附近美食",
           "location": "葛西",
           "link": null,
-          "image_link": "https://www.google.com/maps/search/?api=1&query=葛西"
+          "map_url": "https://www.google.com/maps/search/?api=1&query=葛西",
+          "options": [
+            { "type": "restaurant", "name": "Denny's 葛西店", "link": "https://www.dennys.jp/", "map_url": "https://www.google.com/maps/search/?api=1&query=Denny's葛西店" },
+            { "type": "restaurant", "name": "Saizeriya 葛西店", "link": "https://www.saizeriya.co.jp/", "map_url": "https://www.google.com/maps/search/?api=1&query=Saizeriya葛西店" }
+          ]
         },
         {
           "time": "14:00",
           "description": "地下鐵博物館：了解東京地鐵歷史與發展",
           "location": "地下鐵博物館",
           "link": "https://www.tokyometro.jp/museum/",
-          "image_link": "https://www.google.com/maps/search/?api=1&query=地下鐵博物館"
+          "map_url": "https://www.google.com/maps/search/?api=1&query=地下鐵博物館",
+          "options": []
         },
         {
           "time": "16:00",
           "description": "葛西周邊購物：AEON 永旺夢樂城葛西店",
           "location": "葛西",
           "link": "https://www.aeon.jp/sc/kasai/",
-          "image_link": "https://www.google.com/maps/search/?api=1&query=葛西"
+          "map_url": "https://www.google.com/maps/search/?api=1&query=葛西",
+          "options": [
+            { "type": "attraction", "name": "AEON 永旺夢樂城葛西店", "link": "https://www.aeon.jp/sc/kasai/", "map_url": "https://www.google.com/maps/search/?api=1&query=AEON永旺夢樂城葛西店" }
+          ]
         }
       ],
       "evening": [
@@ -86,14 +105,19 @@
           "description": "晚餐：葛西車站周邊居酒屋或餐廳",
           "location": "葛西",
           "link": null,
-          "image_link": "https://www.google.com/maps/search/?api=1&query=葛西"
+          "map_url": "https://www.google.com/maps/search/?api=1&query=葛西",
+          "options": [
+            { "type": "restaurant", "name": "鳥貴族 葛西店", "link": "https://torikizoku.co.jp/", "map_url": "https://www.google.com/maps/search/?api=1&query=鳥貴族葛西店" },
+            { "type": "restaurant", "name": "魚民 葛西店", "link": "https://www.monteroza.co.jp/brand/uom/", "map_url": "https://www.google.com/maps/search/?api=1&query=魚民葛西店" }
+          ]
         },
         {
           "time": "21:00",
           "description": "返回飯店休息",
           "location": "Ｍｉｎｎ葛西",
           "link": null,
-          "image_link": "https://www.google.com/maps/search/?api=1&query=Ｍｉｎｎ葛西"
+          "map_url": "https://www.google.com/maps/search/?api=1&query=Ｍｉｎｎ葛西",
+          "options": []
         }
       ]
     },
@@ -109,21 +133,30 @@
           "description": "早餐：飯店附近或葛西車站周邊",
           "location": "Ｍｉｎｎ葛西/葛西",
           "link": null,
-          "image_link": "https://www.google.com/maps/search/?api=1&query=Ｍｉｎｎ葛西"
+          "map_url": "https://www.google.com/maps/search/?api=1&query=Ｍｉｎｎ葛西",
+          "options": [
+            { "type": "restaurant", "name": "星乃咖啡店 葛西店", "link": "https://www.hoshinocoffee.com/", "map_url": "https://www.google.com/maps/search/?api=1&query=星乃咖啡店葛西店" }
+          ]
         },
         {
           "time": "09:30",
           "description": "前往澀谷：搭乘東京Metro東西線至大手町轉半藏門線",
           "location": "葛西 - 澀谷",
           "link": null,
-          "image_link": "https://www.google.com/maps/dir/?api=1&origin=葛西&destination=澀谷&travelmode=transit&transit_mode=subway&time=0930"
+          "map_url": "https://www.google.com/maps/dir/?api=1&origin=葛西&destination=澀谷&travelmode=transit&transit_mode=subway&time=0930",
+          "options": []
         },
         {
           "time": "10:30",
           "description": "澀谷：忠犬八公像、澀谷交叉路口、澀谷109百貨",
           "location": "澀谷",
           "link": "https://www.shibuya109.jp/",
-          "image_link": "https://www.google.com/maps/search/?api=1&query=澀谷"
+          "map_url": "https://www.google.com/maps/search/?api=1&query=澀谷",
+          "options": [
+            { "type": "attraction", "name": "忠犬八公像", "link": null, "map_url": "https://www.google.com/maps/search/?api=1&query=忠犬八公像" },
+            { "type": "attraction", "name": "澀谷交叉路口", "link": null, "map_url": "https://www.google.com/maps/search/?api=1&query=澀谷交叉路口" },
+            { "type": "attraction", "name": "澀谷109百貨", "link": "https://www.shibuya109.jp/", "map_url": "https://www.google.com/maps/search/?api=1&query=澀谷109百貨" }
+          ]
         }
       ],
       "afternoon": [
@@ -132,21 +165,30 @@
           "description": "午餐：澀谷Hikarie百貨美食街",
           "location": "澀谷Hikarie",
           "link": "https://www.hikarie.jp/",
-          "image_link": "https://www.google.com/maps/search/?api=1&query=澀谷Hikarie"
+          "map_url": "https://www.google.com/maps/search/?api=1&query=澀谷Hikarie",
+          "options": [
+            { "type": "restaurant", "name": "利久牛舌 澀谷Hikarie店", "link": "https://www.rikyu-gyutan.co.jp/", "map_url": "https://www.google.com/maps/search/?api=1&query=利久牛舌澀谷Hikarie店" }
+          ]
         },
         {
           "time": "14:30",
           "description": "原宿：竹下通、明治神宮、表參道",
           "location": "原宿",
           "link": "https://www.takeshita-street.com/",
-          "image_link": "https://www.google.com/maps/search/?api=1&query=原宿"
+          "map_url": "https://www.google.com/maps/search/?api=1&query=原宿",
+          "options": [
+            { "type": "attraction", "name": "竹下通", "link": "https://www.takeshita-street.com/", "map_url": "https://www.google.com/maps/search/?api=1&query=竹下通" },
+            { "type": "attraction", "name": "明治神宮", "link": "https://www.meijijingu.or.jp/", "map_url": "https://www.google.com/maps/search/?api=1&query=明治神宮" },
+            { "type": "attraction", "name": "表參道", "link": null, "map_url": "https://www.google.com/maps/search/?api=1&query=表參道" }
+          ]
         },
         {
           "time": "17:30",
           "description": "LINE FRIENDS STORE 原宿店",
           "location": "原宿",
           "link": "https://www.linefriends.com/store/harajuku",
-          "image_link": "https://www.google.com/maps/search/?api=1&query=原宿"
+          "map_url": "https://www.google.com/maps/search/?api=1&query=原宿",
+          "options": []
         }
       ],
       "evening": [
@@ -155,14 +197,20 @@
           "description": "晚餐：澀谷橫丁",
           "location": "澀谷橫丁",
           "link": "https://shibuya-yokocho.com/",
-          "image_link": "https://www.google.com/maps/search/?api=1&query=澀谷橫丁"
+          "map_url": "https://www.google.com/maps/search/?api=1&query=澀谷橫丁",
+          "options": [
+            { "type": "restaurant", "name": "澀谷橫丁 (多樣日式小吃、居酒屋)", "link": "https://shibuya-yokocho.com/", "map_url": "https://www.google.com/maps/search/?api=1&query=澀谷橫丁" }
+          ]
         },
         {
           "time": "21:30",
           "description": "澀谷PARCO：逛街、任天堂東京店",
           "location": "澀谷PARCO",
           "link": "https://shibuya.parco.jp/shop/detail/?cd=025790",
-          "image_link": "https://www.google.com/maps/search/?api=1&query=澀谷PARCO"
+          "map_url": "https://www.google.com/maps/search/?api=1&query=澀谷PARCO",
+          "options": [
+            { "type": "attraction", "name": "任天堂東京店", "link": "https://www.nintendo.co.jp/officialstore/tokyo/", "map_url": "https://www.google.com/maps/search/?api=1&query=任天堂東京店" }
+          ]
         }
       ]
     },
@@ -178,21 +226,30 @@
           "description": "早餐：飯店附近或葛西車站周邊",
           "location": "Ｍｉｎｎ葛西/葛西",
           "link": null,
-          "image_link": "https://www.google.com/maps/search/?api=1&query=Ｍｉｎｎ葛西"
+          "map_url": "https://www.google.com/maps/search/?api=1&query=Ｍｉｎｎ葛西",
+          "options": [
+            { "type": "restaurant", "name": "星乃咖啡店 葛西店", "link": "https://www.hoshinocoffee.com/", "map_url": "https://www.google.com/maps/search/?api=1&query=星乃咖啡店葛西店" }
+          ]
         },
         {
           "time": "09:30",
           "description": "前往淺草：搭乘東京Metro東西線至日本橋轉淺草線",
           "location": "葛西 - 淺草",
           "link": null,
-          "image_link": "https://www.google.com/maps/dir/?api=1&origin=葛西&destination=淺草&travelmode=transit&transit_mode=subway&time=0930"
+          "map_url": "https://www.google.com/maps/dir/?api=1&origin=葛西&destination=淺草&travelmode=transit&transit_mode=subway&time=0930",
+          "options": []
         },
         {
           "time": "10:30",
           "description": "淺草寺：雷門、仲見世商店街",
           "location": "淺草寺",
           "link": "https://www.senso-ji.jp/",
-          "image_link": "https://www.google.com/maps/search/?api=1&query=淺草寺"
+          "map_url": "https://www.google.com/maps/search/?api=1&query=淺草寺",
+          "options": [
+            { "type": "attraction", "name": "雷門", "link": null, "map_url": "https://www.google.com/maps/search/?api=1&query=雷門" },
+            { "type": "attraction", "name": "仲見世商店街", "link": null, "map_url": "https://www.google.com/maps/search/?api=1&query=仲見世商店街" },
+            { "type": "attraction", "name": "淺草文化觀光中心 (展望台)", "link": "https://www.city.taito.lg.jp/bunka/kanko/kankocenter/index.html", "map_url": "https://www.google.com/maps/search/?api=1&query=淺草文化觀光中心" }
+          ]
         }
       ],
       "afternoon": [
@@ -201,21 +258,31 @@
           "description": "午餐：大黑家天婦羅 或 淺草周邊餐廳",
           "location": "淺草",
           "link": "https://www.daikokuya.co.jp/",
-          "image_link": "https://www.google.com/maps/search/?api=1&query=淺草"
+          "map_url": "https://www.google.com/maps/search/?api=1&query=淺草",
+          "options": [
+            { "type": "restaurant", "name": "大黑家天婦羅", "link": "https://www.daikokuya.co.jp/", "map_url": "https://www.google.com/maps/search/?api=1&query=大黑家天婦羅" },
+            { "type": "restaurant", "name": "淺草今半 國際通本店 (壽喜燒)", "link": "https://www.asakusaimahan.com/", "map_url": "https://www.google.com/maps/search/?api=1&query=淺草今半國際通本店" },
+            { "type": "restaurant", "name": "淺草メンチ (炸肉餅)", "link": null, "map_url": "https://www.google.com/maps/search/?api=1&query=淺草メンチ" }
+          ]
         },
         {
           "time": "14:00",
           "description": "花やしき (Hanayashiki) 遊樂園：日本最古老的遊樂園",
           "location": "花やしき",
           "link": "https://www.hanayashiki.net/",
-          "image_link": "https://www.google.com/maps/search/?api=1&query=花やしき"
+          "map_url": "https://www.google.com/maps/search/?api=1&query=花やしき",
+          "options": []
         },
         {
           "time": "17:00",
           "description": "東京晴空塔：登塔俯瞰東京全景",
           "location": "東京晴空塔",
           "link": "https://www.tokyo-skytree.jp/",
-          "image_link": "https://www.google.com/maps/search/?api=1&query=東京晴空塔"
+          "map_url": "https://www.google.com/maps/search/?api=1&query=東京晴空塔",
+          "options": [
+            { "type": "attraction", "name": "東京晴空塔天望甲板", "link": "https://www.tokyo-skytree.jp/ticket/individual/", "map_url": "https://www.google.com/maps/search/?api=1&query=東京晴空塔天望甲板" },
+            { "type": "attraction", "name": "墨田水族館", "link": "https://www.sumida-aquarium.com/", "map_url": "https://www.google.com/maps/search/?api=1&query=墨田水族館" }
+          ]
         }
       ],
       "evening": [
@@ -224,83 +291,113 @@
           "description": "晚餐：晴空塔Solamachi餐廳 - 例如：利久牛舌",
           "location": "晴空塔Solamachi",
           "link": "https://www.tokyo-solamachi.jp/shop/100/",
-          "image_link": "https://www.google.com/maps/search/?api=1&query=晴空塔Solamachi"
+          "map_url": "https://www.google.com/maps/search/?api=1&query=晴空塔Solamachi",
+          "options": [
+            { "type": "restaurant", "name": "利久牛舌 晴空塔Solamachi店", "link": "https://www.tokyo-solamachi.jp/shop/100/", "map_url": "https://www.google.com/maps/search/?api=1&query=利久牛舌晴空塔Solamachi店" },
+            { "type": "restaurant", "name": "六厘舍TOKYO 晴空塔店 (沾麵)", "link": "https://www.rokutsurisha.com/", "map_url": "https://www.google.com/maps/search/?api=1&query=六厘舍TOKYO晴空塔店" }
+          ]
         },
         {
           "time": "21:00",
           "description": "隅田川夜景散步",
           "location": "隅田川",
           "link": null,
-          "image_link": "https://www.google.com/maps/search/?api=1&query=隅田川"
+          "map_url": "https://www.google.com/maps/search/?api=1&query=隅田川",
+          "options": []
         }
       ]
     },
     {
       "date": "2025-08-14",
       "day": 4,
-      "theme": "新宿都會探索",
+      "theme": "池袋與秋葉原動漫購物",
       "accommodation": "Ｍｉｎｎ葛西",
-      "day_map_link": "https://www.google.com/maps/dir/?api=1&origin=葛西&destination=新宿御苑&waypoints=東京都廳|新宿黃金街|歌舞伎町|新宿高島屋&travelmode=transit&transit_mode=subway",
+      "day_map_link": "https://www.google.com/maps/dir/?api=1&origin=葛西&destination=池袋&waypoints=秋葉原&travelmode=transit&transit_mode=subway",
       "morning": [
         {
           "time": "08:30",
           "description": "早餐：飯店附近或葛西車站周邊",
           "location": "Ｍｉｎｎ葛西/葛西",
           "link": null,
-          "image_link": "https://www.google.com/maps/search/?api=1&query=Ｍｉｎｎ葛西"
+          "map_url": "https://www.google.com/maps/search/?api=1&query=Ｍｉｎｎ葛西",
+          "options": [
+            { "type": "restaurant", "name": "星乃咖啡店 葛西店", "link": "https://www.hoshinocoffee.com/", "map_url": "https://www.google.com/maps/search/?api=1&query=星乃咖啡店葛西店" }
+          ]
         },
         {
           "time": "09:30",
-          "description": "前往新宿：搭乘東京Metro東西線至九段下轉都營新宿線",
-          "location": "葛西 - 新宿",
+          "description": "前往池袋：搭乘東京Metro東西線至飯田橋轉有樂町線",
+          "location": "葛西 - 池袋",
           "link": null,
-          "image_link": "https://www.google.com/maps/dir/?api=1&origin=葛西&destination=新宿&travelmode=transit&transit_mode=subway&time=0930"
+          "map_url": "https://www.google.com/maps/dir/?api=1&origin=葛西&destination=池袋&travelmode=transit&transit_mode=subway&time=0930",
+          "options": []
         },
         {
           "time": "10:30",
-          "description": "新宿御苑：日式庭園、法式庭園、英式風景庭園",
-          "location": "新宿御苑",
-          "link": "https://www.env.go.jp/garden/shinjukugyoen/index.html",
-          "image_link": "https://www.google.com/maps/search/?api=1&query=新宿御苑"
+          "description": "池袋：太陽城 Sunshine City (水族館、展望台、購物中心)",
+          "location": "池袋",
+          "link": "https://sunshinecity.jp/",
+          "map_url": "https://www.google.com/maps/search/?api=1&query=池袋",
+          "options": [
+            { "type": "attraction", "name": "太陽城水族館", "link": "https://sunshinecity.jp/aquarium/", "map_url": "https://www.google.com/maps/search/?api=1&query=太陽城水族館" },
+            { "type": "attraction", "name": "Sunshine 60 展望台", "link": "https://sunshinecity.jp/observatory/", "map_url": "https://www.google.com/maps/search/?api=1&query=Sunshine60展望台" },
+            { "type": "attraction", "name": "Animate 池袋本店", "link": "https://www.animate.co.jp/shop/ikebukuro/", "map_url": "https://www.google.com/maps/search/?api=1&query=Animate池袋本店" }
+          ]
         }
       ],
       "afternoon": [
         {
           "time": "13:00",
-          "description": "午餐：新宿車站周邊餐廳 (例如：新宿Lumine百貨美食街)",
-          "location": "新宿",
+          "description": "午餐：池袋車站周邊餐廳",
+          "location": "池袋",
           "link": null,
-          "image_link": "https://www.google.com/maps/search/?api=1&query=新宿"
+          "map_url": "https://www.google.com/maps/search/?api=1&query=池袋",
+          "options": [
+            { "type": "restaurant", "name": "無敵家拉麵", "link": "https://www.mutekiya.com/", "map_url": "https://www.google.com/maps/search/?api=1&query=無敵家拉麵" },
+            { "type": "restaurant", "name": "東武百貨美食街", "link": null, "map_url": "https://www.google.com/maps/search/?api=1&query=東武百貨池袋店" }
+          ]
         },
         {
           "time": "14:30",
-          "description": "東京都廳展望室：免費俯瞰東京全景",
-          "location": "東京都廳",
-          "link": "https://www.yokoso.metro.tokyo.lg.jp/tenbou/index.html",
-          "image_link": "https://www.google.com/maps/search/?api=1&query=東京都廳"
+          "description": "前往秋葉原：搭乘JR山手線",
+          "location": "池袋 - 秋葉原",
+          "link": null,
+          "map_url": "https://www.google.com/maps/dir/?api=1&origin=池袋&destination=秋葉原&travelmode=transit&transit_mode=subway&time=1430",
+          "options": []
         },
         {
-          "time": "16:30",
-          "description": "新宿黃金街/歌舞伎町：體驗新宿夜生活氛圍 (白天可逛)",
-          "location": "新宿",
-          "link": null,
-          "image_link": "https://www.google.com/maps/search/?api=1&query=新宿黃金街"
+          "time": "15:00",
+          "description": "秋葉原電器街：動漫、電器、遊戲",
+          "location": "秋葉原",
+          "link": "https://akihabara-japan.com/",
+          "map_url": "https://www.google.com/maps/search/?api=1&query=秋葉原",
+          "options": [
+            { "type": "attraction", "name": "Yodobashi Akiba (電器)", "link": "https://www.yodobashi.com/store/110000/", "map_url": "https://www.google.com/maps/search/?api=1&query=YodobashiAkiba" },
+            { "type": "attraction", "name": "Animate 秋葉原 (動漫)", "link": "https://www.animate.co.jp/shop/akihabara/", "map_url": "https://www.google.com/maps/search/?api=1&query=Animate秋葉原" },
+            { "type": "attraction", "name": "SEGA 秋葉原 (遊戲中心)", "link": null, "map_url": "https://www.google.com/maps/search/?api=1&query=SEGA秋葉原" }
+          ]
         }
       ],
       "evening": [
         {
           "time": "19:00",
-          "description": "晚餐：新宿特色餐廳 (例如：燒肉、居酒屋)",
-          "location": "新宿",
+          "description": "晚餐：秋葉原特色餐廳 (例如：女僕咖啡廳、拉麵)",
+          "location": "秋葉原",
           "link": null,
-          "image_link": "https://www.google.com/maps/search/?api=1&query=新宿"
+          "map_url": "https://www.google.com/maps/search/?api=1&query=秋葉原",
+          "options": [
+            { "type": "restaurant", "name": "GUNDAM Cafe (鋼彈咖啡廳)", "link": "https://gundam-cafe.jp/", "map_url": "https://www.google.com/maps/search/?api=1&query=GUNDAMCafe秋葉原" },
+            { "type": "restaurant", "name": "@home cafe (女僕咖啡廳)", "link": "https://www.cafe-athome.com/", "map_url": "https://www.google.com/maps/search/?api=1&query=@homecafe秋葉原" },
+            { "type": "restaurant", "name": "九州じゃんがら 秋葉原店 (拉麵)", "link": "https://kyushujangara.co.jp/", "map_url": "https://www.google.com/maps/search/?api=1&query=九州じゃんがら秋葉原店" }
+          ]
         },
         {
           "time": "21:00",
-          "description": "新宿逛街：BIC CAMERA 新宿東口店 或 新宿高島屋",
-          "location": "新宿",
-          "link": "https://www.biccamera.com/bc/com/index.jsp",
-          "image_link": "https://www.google.com/maps/search/?api=1&query=新宿高島屋"
+          "description": "秋葉原逛街：唐吉訶德 秋葉原店 (藥妝、雜貨)",
+          "location": "秋葉原",
+          "link": "https://www.donki.com/store/shop_detail.php?shop_id=10",
+          "map_url": "https://www.google.com/maps/search/?api=1&query=唐吉訶德秋葉原店",
+          "options": []
         }
       ]
     },
@@ -316,28 +413,34 @@
           "description": "早餐：飯店附近或葛西車站周邊",
           "location": "Ｍｉｎｎ葛西/葛西",
           "link": null,
-          "image_link": "https://www.google.com/maps/search/?api=1&query=Ｍｉｎｎ葛西"
+          "map_url": "https://www.google.com/maps/search/?api=1&query=Ｍｉｎｎ葛西",
+          "options": [
+            { "type": "restaurant", "name": "星乃咖啡店 葛西店", "link": "https://www.hoshinocoffee.com/", "map_url": "https://www.google.com/maps/search/?api=1&query=星乃咖啡店葛西店" }
+          ]
         },
         {
           "time": "08:30",
           "description": "前往鎌倉 (搭乘東京Metro東西線至大手町轉JR橫須賀線)",
           "location": "葛西 - 鎌倉",
           "link": null,
-          "image_link": "https://www.google.com/maps/dir/?api=1&origin=葛西&destination=鎌倉&travelmode=transit&transit_mode=subway&time=0830"
+          "map_url": "https://www.google.com/maps/dir/?api=1&origin=葛西&destination=鎌倉&travelmode=transit&transit_mode=subway&time=0830",
+          "options": []
         },
         {
           "time": "10:00",
           "description": "鎌倉大佛：高德院",
           "location": "鎌倉大佛",
           "link": "https://www.kotoku-in.jp/",
-          "image_link": "https://www.google.com/maps/search/?api=1&query=鎌倉大佛"
+          "map_url": "https://www.google.com/maps/search/?api=1&query=鎌倉大佛",
+          "options": []
         },
         {
           "time": "11:30",
           "description": "長谷寺：繡球花 (季節限定)、觀音像",
           "location": "長谷寺",
           "link": "https://www.hasedera.jp/",
-          "image_link": "https://www.google.com/maps/search/?api=1&query=長谷寺"
+          "map_url": "https://www.google.com/maps/search/?api=1&query=長谷寺",
+          "options": []
         }
       ],
       "afternoon": [
@@ -346,21 +449,27 @@
           "description": "午餐：鎌倉小町通美食 (海鮮丼、蕎麥麵)",
           "location": "鎌倉小町通",
           "link": "https://tabelog.com/kanagawa/A1404/A140402/14000001/",
-          "image_link": "https://www.google.com/maps/search/?api=1&query=鎌倉小町通"
+          "map_url": "https://www.google.com/maps/search/?api=1&query=鎌倉小町通",
+          "options": [
+            { "type": "restaurant", "name": "鎌倉釜飯かまかま", "link": "https://tabelog.com/kanagawa/A1404/A140402/14000001/", "map_url": "https://www.google.com/maps/search/?api=1&query=鎌倉釜飯かまかま" },
+            { "type": "restaurant", "name": "しらすとさくらの葉の店 鎌倉", "link": null, "map_url": "https://www.google.com/maps/search/?api=1&query=しらすとさくらの葉の店鎌倉" }
+          ]
         },
         {
           "time": "14:30",
           "description": "鶴岡八幡宮：鎌倉主要神社",
           "location": "鶴岡八幡宮",
           "link": "https://www.hachimangu.or.jp/",
-          "image_link": "https://www.google.com/maps/search/?api=1&query=鶴岡八幡宮"
+          "map_url": "https://www.google.com/maps/search/?api=1&query=鶴岡八幡宮",
+          "options": []
         },
         {
           "time": "16:30",
           "description": "返回お茶の水ホテルジュラク (搭乘JR橫須賀線至東京轉JR中央線快速)",
           "location": "鎌倉 - お茶の水ホテルジュラク",
           "link": null,
-          "image_link": "https://www.google.com/maps/dir/?api=1&origin=鎌倉&destination=お茶の水ホテルジュラク&travelmode=transit&transit_mode=subway&time=1630"
+          "map_url": "https://www.google.com/maps/dir/?api=1&origin=鎌倉&destination=お茶の水ホテルジュラク&travelmode=transit&transit_mode=subway&time=1630",
+          "options": []
         }
       ],
       "evening": [
@@ -369,14 +478,18 @@
           "description": "晚餐：お茶の水車站周邊餐廳",
           "location": "お茶の水",
           "link": null,
-          "image_link": "https://www.google.com/maps/search/?api=1&query=お茶の水"
+          "map_url": "https://www.google.com/maps/search/?api=1&query=お茶の水",
+          "options": [
+            { "type": "restaurant", "name": "神田藪蕎麥", "link": "https://kanda-yabusoba.co.jp/", "map_url": "https://www.google.com/maps/search/?api=1&query=神田藪蕎麥" },
+            { "type": "restaurant", "name": "肉の萬世 秋葉原本店 (肉料理)", "link": "https://www.mansei.co.jp/", "map_url": "https://www.google.com/maps/search/?api=1&query=肉の萬世秋葉原本店" }
+          ]
         }
       ]
     },
     {
       "date": "2025-08-16",
       "day": 6,
-      "theme": "上野與埼玉競技場",
+      "theme": "上野與埼玉競技場 / 約會行程",
       "accommodation": "お茶の水ホテルジュラク",
       "day_map_link": "https://www.google.com/maps/dir/?api=1&origin=上野公園&destination=埼玉超級競技場&travelmode=transit&transit_mode=subway",
       "morning": [
@@ -385,92 +498,174 @@
           "description": "早餐：飯店附近",
           "location": "上野",
           "link": null,
-          "image_link": "https://www.google.com/maps/search/?api=1&query=上野"
+          "map_url": "https://www.google.com/maps/search/?api=1&query=上野",
+          "options": [
+            { "type": "restaurant", "name": "上島咖啡店 上野廣小路店", "link": "https://www.ueshima-coffee.jp/", "map_url": "https://www.google.com/maps/search/?api=1&query=上島咖啡店上野廣小路店" }
+          ]
         },
         {
           "time": "09:30",
           "description": "上野公園：東京國立博物館、國立西洋美術館",
           "location": "上野公園",
           "link": "https://www.ueno.or.jp/",
-          "image_link": "https://www.google.com/maps/search/?api=1&query=上野公園"
+          "map_url": "https://www.google.com/maps/search/?api=1&query=上野公園",
+          "options": [
+            { "type": "attraction", "name": "東京國立博物館", "link": "https://www.tnm.jp/", "map_url": "https://www.google.com/maps/search/?api=1&query=東京國立博物館" },
+            { "type": "attraction", "name": "國立西洋美術館", "link": "https://www.nmwa.go.jp/", "map_url": "https://www.google.com/maps/search/?api=1&query=國立西洋美術館" },
+            { "type": "attraction", "name": "上野動物園", "link": "https://www.tokyo-zoo.net/zoo/ueno/", "map_url": "https://www.google.com/maps/search/?api=1&query=上野動物園" }
+          ]
         }
       ],
       "afternoon": [
         {
           "time": "12:30",
-          "description": "午餐：上野公園周邊餐廳 或 阿美橫丁小吃 - 例如：一蘭拉麵 上野店",
+          "description": "午餐：上野公園周邊餐廳 或 阿美橫丁小吃",
           "location": "上野",
-          "link": "https://ichiran.com/shop/kanto/ueno/",
-          "image_link": "https://www.google.com/maps/search/?api=1&query=上野"
+          "link": null,
+          "map_url": "https://www.google.com/maps/search/?api=1&query=上野",
+          "options": [
+            { "type": "restaurant", "name": "一蘭拉麵 上野店", "link": "https://ichiran.com/shop/kanto/ueno/", "map_url": "https://www.google.com/maps/search/?api=1&query=一蘭拉麵上野店" },
+            { "type": "restaurant", "name": "阿美橫丁小吃 (多樣選擇)", "link": null, "map_url": "https://www.google.com/maps/search/?api=1&query=阿美橫丁" }
+          ]
         },
         {
           "time": "14:00",
-          "description": "前往埼玉超級競技場 (搭乘JR中央線快速至新宿轉JR埼京線至武藏浦和轉JR武藏野線至埼玉新都心)",
+          "description": "分開行動：埼玉超級競技場 (2人) / 約會行程 (2人)",
+          "location": "上野",
+          "link": null,
+          "map_url": null,
+          "options": []
+        },
+        {
+          "time": "14:30",
+          "description": "埼玉組：前往埼玉超級競技場 (搭乘JR中央線快速至新宿轉JR埼京線至武藏浦和轉JR武藏野線至埼玉新都心)",
           "location": "お茶の水 - 埼玉競技場",
           "link": null,
-          "image_link": "https://www.google.com/maps/dir/?api=1&origin=お茶の水&destination=埼玉超級競技場&travelmode=transit&transit_mode=subway&time=1400"
+          "map_url": "https://www.google.com/maps/dir/?api=1&origin=お茶の水&destination=埼玉超級競技場&travelmode=transit&transit_mode=subway&time=1400",
+          "options": []
         },
         {
           "time": "15:00",
-          "description": "埼玉超級競技場：演唱會 (提前抵達)",
+          "description": "埼玉組：埼玉超級競技場：演唱會 (提前抵達)",
           "location": "埼玉超級競技場",
           "link": "https://www.saitama-arena.co.jp/",
-          "image_link": "https://www.google.com/maps/search/?api=1&query=埼玉超級競技場"
+          "map_url": "https://www.google.com/maps/search/?api=1&query=埼玉超級競技場",
+          "options": []
+        },
+        {
+          "time": "14:30",
+          "description": "約會組：前往吉祥寺 (搭乘JR中央線快速)",
+          "location": "お茶の水 - 吉祥寺",
+          "link": null,
+          "map_url": "https://www.google.com/maps/dir/?api=1&origin=お茶の水&destination=吉祥寺&travelmode=transit&transit_mode=subway&time=1430",
+          "options": []
+        },
+        {
+          "time": "15:00",
+          "description": "約會組：井之頭恩賜公園、吉卜力美術館 (需預約)",
+          "location": "吉祥寺",
+          "link": "https://www.ghibli-museum.jp/en/",
+          "map_url": "https://www.google.com/maps/search/?api=1&query=井之頭恩賜公園",
+          "options": [
+            { "type": "attraction", "name": "井之頭恩賜公園", "link": null, "map_url": "https://www.google.com/maps/search/?api=1&query=井之頭恩賜公園" },
+            { "type": "attraction", "name": "吉卜力美術館", "link": "https://www.ghibli-museum.jp/en/", "map_url": "https://www.google.com/maps/search/?api=1&query=吉卜力美術館" }
+          ]
         }
       ],
       "evening": [
         {
+          "time": "19:00",
+          "description": "約會組：晚餐：吉祥寺周邊美食 (例如：Satou 牛肉丸)",
+          "location": "吉祥寺",
+          "link": null,
+          "map_url": "https://www.google.com/maps/search/?api=1&query=吉祥寺",
+          "options": [
+            { "type": "restaurant", "name": "Satou 牛肉丸", "link": "https://www.shop-satou.com/", "map_url": "https://www.google.com/maps/search/?api=1&query=Satou牛肉丸吉祥寺" }
+          ]
+        },
+        {
           "time": "21:00",
-          "description": "晚餐：演唱會結束後在埼玉或返回東京後用餐 - 例如：埼玉新都心車站周邊餐廳",
+          "description": "埼玉組：晚餐：演唱會結束後在埼玉或返回東京後用餐",
           "location": "埼玉/お茶の水",
           "link": null,
-          "image_link": "https://www.google.com/maps/search/?api=1&query=埼玉新都心"
+          "map_url": "https://www.google.com/maps/search/?api=1&query=埼玉新都心",
+          "options": [
+            { "type": "restaurant", "name": "埼玉新都心車站周邊餐廳", "link": null, "map_url": "https://www.google.com/maps/search/?api=1&query=埼玉新都心車站周邊餐廳" }
+          ]
         }
       ]
     },
     {
       "date": "2025-08-17",
       "day": 7,
-      "theme": "東京市區觀光與購物",
+      "theme": "東京潮流與文化體驗 (朋友行程)",
       "accommodation": "お茶の水ホテルジュラク",
-      "day_map_link": "https://www.google.com/maps/dir/?api=1&origin=秋葉原&destination=東京車站&waypoints=銀座|お茶の水ホテルジュラク&travelmode=transit&transit_mode=subway",
+      "day_map_link": "https://www.google.com/maps/dir/?api=1&origin=お茶の水&destination=澀谷&waypoints=原宿|新宿|銀座&travelmode=transit&transit_mode=subway",
       "morning": [
         {
           "time": "08:30",
           "description": "早餐：飯店附近或お茶の水車站周邊",
           "location": "お茶の水",
           "link": null,
-          "image_link": "https://www.google.com/maps/search/?api=1&query=お茶の水"
+          "map_url": "https://www.google.com/maps/search/?api=1&query=お茶の水",
+          "options": [
+            { "type": "restaurant", "name": "星乃咖啡店 御茶之水店", "link": "https://www.hoshinocoffee.com/", "map_url": "https://www.google.com/maps/search/?api=1&query=星乃咖啡店御茶之水店" }
+          ]
         },
         {
           "time": "09:30",
-          "description": "秋葉原電器街：動漫、電器、遊戲",
-          "location": "秋葉原",
-          "link": "https://akihabara-japan.com/",
-          "image_link": "https://www.google.com/maps/search/?api=1&query=秋葉原"
+          "description": "前往澀谷：搭乘JR中央線快速至新宿轉JR山手線",
+          "location": "お茶の水 - 澀谷",
+          "link": null,
+          "map_url": "https://www.google.com/maps/dir/?api=1&origin=お茶の水&destination=澀谷&travelmode=transit&transit_mode=subway&time=0930",
+          "options": []
+        },
+        {
+          "time": "10:30",
+          "description": "澀谷：忠犬八公像、澀谷交叉路口、澀谷PARCO (任天堂東京店)",
+          "location": "澀谷",
+          "link": "https://shibuya.parco.jp/shop/detail/?cd=025790",
+          "map_url": "https://www.google.com/maps/search/?api=1&query=澀谷",
+          "options": [
+            { "type": "attraction", "name": "忠犬八公像", "link": null, "map_url": "https://www.google.com/maps/search/?api=1&query=忠犬八公像" },
+            { "type": "attraction", "name": "澀谷交叉路口", "link": null, "map_url": "https://www.google.com/maps/search/?api=1&query=澀谷交叉路口" },
+            { "type": "attraction", "name": "任天堂東京店", "link": "https://www.nintendo.co.jp/officialstore/tokyo/", "map_url": "https://www.google.com/maps/search/?api=1&query=任天堂東京店" }
+          ]
         }
       ],
       "afternoon": [
         {
-          "time": "12:30",
-          "description": "午餐：秋葉原特色餐廳 (例如：女僕咖啡廳、拉麵)",
-          "location": "秋葉原",
-          "link": null,
-          "image_link": "https://www.google.com/maps/search/?api=1&query=秋葉原"
+          "time": "13:00",
+          "description": "午餐：澀谷Hikarie百貨美食街",
+          "location": "澀谷Hikarie",
+          "link": "https://www.hikarie.jp/",
+          "map_url": "https://www.google.com/maps/search/?api=1&query=澀谷Hikarie",
+          "options": [
+            { "type": "restaurant", "name": "利久牛舌 澀谷Hikarie店", "link": "https://www.rikyu-gyutan.co.jp/", "map_url": "https://www.google.com/maps/search/?api=1&query=利久牛舌澀谷Hikarie店" }
+          ]
         },
         {
-          "time": "14:00",
-          "description": "東京車站：丸之內口、一番街 (伴手禮、美食)",
-          "location": "東京車站",
-          "link": "https://www.tokyostationcity.com/",
-          "image_link": "https://www.google.com/maps/search/?api=1&query=東京車站"
+          "time": "14:30",
+          "description": "原宿：竹下通、明治神宮、表參道",
+          "location": "原宿",
+          "link": "https://www.takeshita-street.com/",
+          "map_url": "https://www.google.com/maps/search/?api=1&query=原宿",
+          "options": [
+            { "type": "attraction", "name": "竹下通", "link": "https://www.takeshita-street.com/", "map_url": "https://www.google.com/maps/search/?api=1&query=竹下通" },
+            { "type": "attraction", "name": "明治神宮", "link": "https://www.meijijingu.or.jp/", "map_url": "https://www.google.com/maps/search/?api=1&query=明治神宮" },
+            { "type": "attraction", "name": "LINE FRIENDS STORE 原宿店", "link": "https://www.linefriends.com/store/harajuku", "map_url": "https://www.google.com/maps/search/?api=1&query=LINEFRIENDSSTORE原宿店" }
+          ]
         },
         {
-          "time": "16:00",
-          "description": "銀座：高級百貨、精品店",
-          "location": "銀座",
-          "link": "https://www.ginza.jp/",
-          "image_link": "https://www.google.com/maps/search/?api=1&query=銀座"
+          "time": "17:00",
+          "description": "新宿：東京都廳展望室、新宿御苑",
+          "location": "新宿",
+          "link": "https://www.yokoso.metro.tokyo.lg.jp/tenbou/index.html",
+          "map_url": "https://www.google.com/maps/search/?api=1&query=新宿",
+          "options": [
+            { "type": "attraction", "name": "東京都廳展望室", "link": "https://www.yokoso.metro.tokyo.lg.jp/tenbou/index.html", "map_url": "https://www.google.com/maps/search/?api=1&query=東京都廳展望室" },
+            { "type": "attraction", "name": "新宿御苑", "link": "https://www.env.go.jp/garden/shinjukugyoen/index.html", "map_url": "https://www.google.com/maps/search/?api=1&query=新宿御苑" }
+          ]
         }
       ],
       "evening": [
@@ -479,14 +674,22 @@
           "description": "晚餐：銀座特色餐廳",
           "location": "銀座",
           "link": null,
-          "image_link": "https://www.google.com/maps/search/?api=1&query=銀座"
+          "map_url": "https://www.google.com/maps/search/?api=1&query=銀座",
+          "options": [
+            { "type": "restaurant", "name": "銀座梅林 (豬排飯)", "link": "https://ginzabairin.com/", "map_url": "https://www.google.com/maps/search/?api=1&query=銀座梅林" },
+            { "type": "restaurant", "name": "資生堂Parlour 銀座總店 (洋食)", "link": "https://parlour.shiseido.co.jp/", "map_url": "https://www.google.com/maps/search/?api=1&query=資生堂Parlour銀座總店" }
+          ]
         },
         {
           "time": "21:00",
-          "description": "返回飯店休息，整理行李",
-          "location": "お茶の水ホテルジュラク",
-          "link": null,
-          "image_link": "https://www.google.com/maps/search/?api=1&query=お茶の水ホテルジュラク"
+          "description": "銀座逛街：高級百貨、精品店",
+          "location": "銀座",
+          "link": "https://www.ginza.jp/",
+          "map_url": "https://www.google.com/maps/search/?api=1&query=銀座",
+          "options": [
+            { "type": "attraction", "name": "銀座三越", "link": "https://www.mitsukoshi.mistore.jp/ginza.html", "map_url": "https://www.google.com/maps/search/?api=1&query=銀座三越" },
+            { "type": "attraction", "name": "GINZA SIX", "link": "https://ginza6.tokyo/", "map_url": "https://www.google.com/maps/search/?api=1&query=GINZASIX" }
+          ]
         }
       ]
     },
@@ -502,14 +705,22 @@
           "description": "早餐：飯店附近",
           "location": "お茶の水",
           "link": null,
-          "image_link": "https://www.google.com/maps/search/?api=1&query=お茶の水"
+          "map_url": "https://www.google.com/maps/search/?api=1&query=お茶の水",
+          "options": [
+            { "type": "restaurant", "name": "星乃咖啡店 御茶之水店", "link": "https://www.hoshinocoffee.com/", "map_url": "https://www.google.com/maps/search/?api=1&query=星乃咖啡店御茶之水店" }
+          ]
         },
         {
           "time": "10:00",
           "description": "自由活動/最後採買：可在お茶の水或東京車站周邊進行",
           "location": "お茶の水/東京車站",
           "link": null,
-          "image_link": "https://www.google.com/maps/search/?api=1&query=お茶の水"
+          "map_url": "https://www.google.com/maps/search/?api=1&query=お茶の水",
+          "options": [
+            { "type": "attraction", "name": "東京車站一番街 (伴手禮、美食)", "link": "https://www.tokyoeki-1bangai.co.jp/", "map_url": "https://www.google.com/maps/search/?api=1&query=東京車站一番街" },
+            { "type": "attraction", "name": "KITTE 丸之內 (購物、美食)", "link": "https://kitte-marunouchi.jp/", "map_url": "https://www.google.com/maps/search/?api=1&query=KITTE丸之內" },
+            { "type": "attraction", "name": "大丸東京店 (百貨公司)", "link": "https://www.daimaru.co.jp/tokyo/", "map_url": "https://www.google.com/maps/search/?api=1&query=大丸東京店" }
+          ]
         }
       ],
       "afternoon": [
@@ -518,21 +729,27 @@
           "description": "午餐：東京車站或飯店附近",
           "location": "東京車站/お茶の水",
           "link": null,
-          "image_link": "https://www.google.com/maps/search/?api=1&query=東京車站"
+          "map_url": "https://www.google.com/maps/search/?api=1&query=東京車站",
+          "options": [
+            { "type": "restaurant", "name": "東京拉麵街", "link": "https://www.tokyoeki-1bangai.co.jp/street/ramen/", "map_url": "https://www.google.com/maps/search/?api=1&query=東京拉麵街" },
+            { "type": "restaurant", "name": "黑塀橫丁 (美食街)", "link": null, "map_url": "https://www.google.com/maps/search/?api=1&query=東京車站黑塀橫丁" }
+          ]
         },
         {
           "time": "14:00",
           "description": "返回飯店取行李，前往東京成田機場 (搭乘JR中央線快速至東京轉成田特快N'EX)",
           "location": "お茶の水 - 成田機場",
           "link": "https://www.jreast.co.jp/multi/zh-CHT/pass/nex.html",
-          "image_link": "https://www.google.com/maps/dir/?api=1&origin=お茶の水&destination=成田機場&travelmode=transit&transit_mode=subway&time=1400"
+          "map_url": "https://www.google.com/maps/dir/?api=1&origin=お茶の水&destination=成田機場&travelmode=transit&transit_mode=subway&time=1400",
+          "options": []
         },
         {
           "time": "16:00",
           "description": "東京成田機場 (NRT) 辦理登機手續 (預計19:30班機，提前三小時抵達)",
           "location": "成田機場",
           "link": "https://www.narita-airport.jp/ch2/",
-          "image_link": "https://www.google.com/maps/search/?api=1&query=成田機場"
+          "map_url": "https://www.google.com/maps/search/?api=1&query=成田機場",
+          "options": []
         }
       ],
       "evening": [
@@ -541,7 +758,8 @@
           "description": "離開東京 (班機時間)",
           "location": "成田機場",
           "link": null,
-          "image_link": "https://www.google.com/maps/search/?api=1&query=成田機場"
+          "map_url": "https://www.google.com/maps/search/?api=1&query=成田機場",
+          "options": []
         }
       ]
     }
