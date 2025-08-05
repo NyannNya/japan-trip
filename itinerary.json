@@ -538,7 +538,7 @@
         },
         {
           "time": "14:30",
-          "description": "埼玉組：前往埼玉超級競技場 (搭乘JR中央線快速至新宿轉JR埼京線至武藏浦和轉JR武藏野線至埼玉新都心)",
+          "description": "A組：前往埼玉超級競技場 (搭乘JR中央線快速至新宿轉JR埼京線至武藏浦和轉JR武藏野線至埼玉新都心)",
           "location": "お茶の水 - 埼玉競技場",
           "link": null,
           "map_url": "https://www.google.com/maps/dir/?api=1&origin=お茶の水&destination=埼玉超級競技場&travelmode=transit&transit_mode=subway&time=1400",
@@ -546,7 +546,7 @@
         },
         {
           "time": "15:00",
-          "description": "埼玉組：埼玉超級競技場：演唱會 (提前抵達)",
+          "description": "A組：埼玉超級競技場：演唱會 (提前抵達)",
           "location": "埼玉超級競技場",
           "link": "https://www.saitama-arena.co.jp/",
           "map_url": "https://www.google.com/maps/search/?api=1&query=埼玉超級競技場",
@@ -554,7 +554,7 @@
         },
         {
           "time": "14:30",
-          "description": "約會組：前往吉祥寺 (搭乘JR中央線快速)",
+          "description": "B組：前往吉祥寺 (搭乘JR中央線快速)",
           "location": "お茶の水 - 吉祥寺",
           "link": null,
           "map_url": "https://www.google.com/maps/dir/?api=1&origin=お茶の水&destination=吉祥寺&travelmode=transit&transit_mode=subway&time=1430",
@@ -562,7 +562,7 @@
         },
         {
           "time": "15:00",
-          "description": "約會組：吉祥寺周邊散步、購物、咖啡廳",
+          "description": "B組：吉祥寺周邊散步、購物、咖啡廳",
           "location": "吉祥寺",
           "link": null,
           "map_url": "https://www.google.com/maps/search/?api=1&query=吉祥寺",
@@ -576,7 +576,7 @@
       "evening": [
         {
           "time": "19:00",
-          "description": "約會組：晚餐：吉祥寺周邊美食 (例如：Satou 牛肉丸)",
+          "description": "B組：晚餐：吉祥寺周邊美食 (例如：Satou 牛肉丸)",
           "location": "吉祥寺",
           "link": null,
           "map_url": "https://www.google.com/maps/search/?api=1&query=吉祥寺",
@@ -586,7 +586,7 @@
         },
         {
           "time": "21:00",
-          "description": "埼玉組：晚餐：演唱會結束後在埼玉或返回東京後用餐",
+          "description": "A組：晚餐：演唱會結束後在埼玉或返回東京後用餐",
           "location": "埼玉/お茶の水",
           "link": null,
           "map_url": "https://www.google.com/maps/search/?api=1&query=埼玉新都心",

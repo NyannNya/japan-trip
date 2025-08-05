@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                         let mapLinkHtml = '';
                         if (activity.map_url) {
-                            mapLinkHtml = `<a href="${activity.map_url}" target="_blank">查看地圖/路線</a>`;
+                            mapLinkHtml = `<a href="${activity.map_url}" target="_blank">MAP</a>`;
                         }
 
                         let noteHtml = '';
@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                                 let optionMapLinkHtml = '';
                                 if (option.map_url) {
-                                    optionMapLinkHtml = `<a href="${option.map_url}" target="_blank">查看地圖/路線</a>`;
+                                    optionMapLinkHtml = `<a href="${option.map_url}" target="_blank">MAP</a>`;
                                 }
 
                                 optionItem.innerHTML = `
@@ -113,13 +113,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 const sSaitamaGroup = document.createElement('div');
                 sSaitamaGroup.style.flex = '1';
                 sSaitamaGroup.style.paddingRight = '10px';
-                sSaitamaGroup.innerHTML = '<h4>埼玉組</h4><ul></ul>';
+                sSaitamaGroup.innerHTML = '<h4>A組</h4><ul></ul>';
                 const sSaitamaList = sSaitamaGroup.querySelector('ul');
 
                 const sDateGroup = document.createElement('div');
                 sDateGroup.style.flex = '1';
                 sDateGroup.style.paddingLeft = '10px';
-                sDateGroup.innerHTML = '<h4>約會組</h4><ul></ul>';
+                sDateGroup.innerHTML = '<h4>B組</h4><ul></ul>';
                 const sDateList = sDateGroup.querySelector('ul');
 
                 const processSplitActivities = (activities, targetSaitamaList, targetDateList) => {
@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                             let mapLinkHtml = '';
                             if (activity.map_url) {
-                                mapLinkHtml = `<a href="${activity.map_url}" target="_blank">查看地圖/路線</a>`;
+                                mapLinkHtml = `<a href="${activity.map_url}" target="_blank">MAP</a>`;
                             }
 
                             let noteHtml = '';
@@ -153,9 +153,9 @@ document.addEventListener('DOMContentLoaded', () => {
                                 </div>
                             `;
 
-                            if (activity.description.includes('埼玉組')) {
+                            if (activity.description.includes('A組')) {
                                 targetSaitamaList.appendChild(listItem);
-                            } else if (activity.description.includes('約會組')) {
+                            } else if (activity.description.includes('B組')) {
                                 targetDateList.appendChild(listItem);
                             } else {
                                 // For the "分開行動" activity itself, add it to the main list or handle as needed
@@ -176,7 +176,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                                     let optionMapLinkHtml = '';
                                     if (option.map_url) {
-                                        optionMapLinkHtml = `<a href="${option.map_url}" target="_blank">查看地圖/路線</a>`;
+                                        optionMapLinkHtml = `<a href="${option.map_url}" target="_blank">MAP</a>`;
                                     }
 
                                     optionItem.innerHTML = `
@@ -187,9 +187,9 @@ document.addEventListener('DOMContentLoaded', () => {
                                     `;
                                     optionsList.appendChild(optionItem);
                                 });
-                                if (activity.description.includes('埼玉組')) {
+                                if (activity.description.includes('A組')) {
                                     targetSaitamaList.appendChild(optionsList);
-                                } else if (activity.description.includes('約會組')) {
+                                } else if (activity.description.includes('B組')) {
                                     targetDateList.appendChild(optionsList);
                                 }
                             }
