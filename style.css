@@ -71,7 +71,38 @@ main {
     padding: 10px 15px;
     border-radius: 4px;
     display: flex;
+    align-items: flex-start; /* 調整對齊方式 */
+    flex-wrap: wrap; /* 允許內容換行 */
+}
+
+.activity-content {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    width: 100%;
+}
+
+.activity-link-group {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.day-map-link-container {
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.day-map-link-container a {
+    font-size: 0.9em;
+    color: #007bff;
+}
+
+.activity-note {
+    font-size: 0.85em;
+    color: #666;
+    margin-top: 5px;
+    margin-left: 70px; /* 調整縮排以對齊時間 */
 }
 
 .day-card ul li strong {

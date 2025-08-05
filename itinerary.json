@@ -742,7 +742,8 @@
           "location": "お茶の水 - 成田機場",
           "link": "https://www.jreast.co.jp/multi/zh-CHT/pass/nex.html",
           "map_url": "https://www.google.com/maps/dir/?api=1&origin=お茶の水&destination=成田機場&travelmode=transit&transit_mode=subway&time=1400",
-          "options": []
+          "options": [],
+          "note": "我想帶行李到車站寄放"
         },
         {
           "time": "16:00",

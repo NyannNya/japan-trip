@@ -22,9 +22,10 @@ document.addEventListener('DOMContentLoaded', () => {
             dayCard.appendChild(dateHeader);
 
             if (day.day_map_link) {
-                const dayMapLink = document.createElement('p');
-                dayMapLink.innerHTML = `<a href="${day.day_map_link}" target="_blank" style="font-size: 0.9em; color: #007bff;">查看當日綜合路線圖</a>`;
-                dayCard.appendChild(dayMapLink);
+                const dayMapLinkContainer = document.createElement('div');
+                dayMapLinkContainer.classList.add('day-map-link-container');
+                dayMapLinkContainer.innerHTML = `<a href="${day.day_map_link}" target="_blank">查看當日綜合路線圖</a>`;
+                dayCard.appendChild(dayMapLinkContainer);
             }
 
             const accommodationInfo = document.createElement('h3');
@@ -40,10 +41,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     activitiesList.appendChild(timeHeader);
                     activities.forEach(activity => {
                         const listItem = document.createElement('li');
-                        let descriptionHtml = `<span>${activity.description} (${activity.location})</span>`;
-                        if (activity.link) {
-                            descriptionHtml = `<a href="${activity.link}" target="_blank">${descriptionHtml}</a>`;
-                        }
                         let linkHtml = '';
                         if (activity.link) {
                             linkHtml = `<a href="${activity.link}" target="_blank">${activity.description} (${activity.location})</a>`;
@@ -53,12 +50,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
                         let mapLinkHtml = '';
                         if (activity.map_url) {
-                            mapLinkHtml = `<a href="${activity.map_url}" target="_blank" style="font-size: 0.9em; color: #007bff;">查看地圖/路線</a>`;
+                            mapLinkHtml = `<a href="${activity.map_url}" target="_blank">查看地圖/路線</a>`;
+                        }
+
+                        let noteHtml = '';
+                        if (activity.note) {
+                            noteHtml = `<div class="activity-note">${activity.note}</div>`;
                         }
 
                         listItem.innerHTML = `
-                            <div style="display: flex; justify-content: space-between; align-items: center;">
-                                <div><strong>${activity.time}</strong> ${linkHtml}</div>
+                            <div class="activity-content">
+                                <div class="activity-link-group">
+                                    <div><strong>${activity.time}</strong> ${linkHtml}</div>
+                                    ${noteHtml}
+                                </div>
                                 ${mapLinkHtml ? `<div>${mapLinkHtml}</div>` : ''}
                             </div>
                         `;
@@ -78,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                                 let optionMapLinkHtml = '';
                                 if (option.map_url) {
-                                    optionMapLinkHtml = `<a href="${option.map_url}" target="_blank" style="font-size: 0.8em; color: #007bff;">查看地圖/路線</a>`;
+                                    optionMapLinkHtml = `<a href="${option.map_url}" target="_blank">查看地圖/路線</a>`;
                                 }
 
                                 optionItem.innerHTML = `
@@ -95,8 +100,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             };
 
-            // Special handling for Day 6 split activities
-            if (day.day === 6 && day.afternoon && day.afternoon.some(act => act.description.includes('分開行動'))) {
+            // Render morning activities for all days, including Day 6
+            renderActivities(day.morning, '早上');
+
+            // Special handling for Day 6 split activities for afternoon and evening
+            if (day.day === 6 && (day.afternoon || day.evening)) {
                 const splitContainer = document.createElement('div');
                 splitContainer.style.display = 'flex';
                 splitContainer.style.justifyContent = 'space-around';
@@ -114,81 +122,93 @@ document.addEventListener('DOMContentLoaded', () => {
                 sDateGroup.innerHTML = '<h4>約會組</h4><ul></ul>';
                 const sDateList = sDateGroup.querySelector('ul');
 
-                day.afternoon.forEach(activity => {
-                    const listItem = document.createElement('li');
-                    let linkHtml = '';
-                    if (activity.link) {
-                        linkHtml = `<a href="${activity.link}" target="_blank">${activity.description} (${activity.location})</a>`;
-                    } else {
-                        linkHtml = `<span>${activity.description} (${activity.location})</span>`;
-                    }
-
-                    let mapLinkHtml = '';
-                    if (activity.map_url) {
-                        mapLinkHtml = `<a href="${activity.map_url}" target="_blank" style="font-size: 0.9em; color: #007bff;">查看地圖/路線</a>`;
-                    }
-
-                    listItem.innerHTML = `
-                        <div style="display: flex; justify-content: space-between; align-items: center;">
-                            <div><strong>${activity.time}</strong> ${linkHtml}</div>
-                            ${mapLinkHtml ? `<div>${mapLinkHtml}</div>` : ''}
-                        </div>
-                    `;
-
-                    if (activity.description.includes('埼玉組')) {
-                        sSaitamaList.appendChild(listItem);
-                    } else if (activity.description.includes('約會組')) {
-                        sDateList.appendChild(listItem);
-                    } else {
-                        // For the "分開行動" activity itself, add it to the main list or handle as needed
-                        activitiesList.appendChild(listItem);
-                    }
-
-                    if (activity.options && activity.options.length > 0) {
-                        const optionsList = document.createElement('ul');
-                        optionsList.style.marginLeft = '20px'; // Indent options
-                        activity.options.forEach(option => {
-                            const optionItem = document.createElement('li');
-                            let optionLinkHtml = '';
-                            if (option.link) {
-                                optionLinkHtml = `<a href="${option.link}" target="_blank">${option.type === 'restaurant' ? '餐廳' : '景點'}: ${option.name}</a>`;
+                const processSplitActivities = (activities, targetSaitamaList, targetDateList) => {
+                    if (activities) {
+                        activities.forEach(activity => {
+                            const listItem = document.createElement('li');
+                            let linkHtml = '';
+                            if (activity.link) {
+                                linkHtml = `<a href="${activity.link}" target="_blank">${activity.description} (${activity.location})</a>`;
                             } else {
-                                optionLinkHtml = `<span>${option.type === 'restaurant' ? '餐廳' : '景點'}: ${option.name}</span>`;
+                                linkHtml = `<span>${activity.description} (${activity.location})</span>`;
                             }
 
-                            let optionMapLinkHtml = '';
-                            if (option.map_url) {
-                                optionMapLinkHtml = `<a href="${option.map_url}" target="_blank" style="font-size: 0.8em; color: #007bff;">查看地圖/路線</a>`;
+                            let mapLinkHtml = '';
+                            if (activity.map_url) {
+                                mapLinkHtml = `<a href="${activity.map_url}" target="_blank">查看地圖/路線</a>`;
                             }
 
-                            optionItem.innerHTML = `
-                                <div style="display: flex; justify-content: space-between; align-items: center;">
-                                    <div>${optionLinkHtml}</div>
-                                    ${optionMapLinkHtml ? `<div>${optionMapLinkHtml}</div>` : ''}
+                            let noteHtml = '';
+                            if (activity.note) {
+                                noteHtml = `<div class="activity-note">${activity.note}</div>`;
+                            }
+
+                            listItem.innerHTML = `
+                                <div class="activity-content">
+                                    <div class="activity-link-group">
+                                        <div><strong>${activity.time}</strong> ${linkHtml}</div>
+                                        ${noteHtml}
+                                    </div>
+                                    ${mapLinkHtml ? `<div>${mapLinkHtml}</div>` : ''}
                                 </div>
                             `;
-                            optionsList.appendChild(optionItem);
+
+                            if (activity.description.includes('埼玉組')) {
+                                targetSaitamaList.appendChild(listItem);
+                            } else if (activity.description.includes('約會組')) {
+                                targetDateList.appendChild(listItem);
+                            } else {
+                                // For the "分開行動" activity itself, add it to the main list or handle as needed
+                                activitiesList.appendChild(listItem);
+                            }
+
+                            if (activity.options && activity.options.length > 0) {
+                                const optionsList = document.createElement('ul');
+                                optionsList.style.marginLeft = '20px'; // Indent options
+                                activity.options.forEach(option => {
+                                    const optionItem = document.createElement('li');
+                                    let optionLinkHtml = '';
+                                    if (option.link) {
+                                        optionLinkHtml = `<a href="${option.link}" target="_blank">${option.type === 'restaurant' ? '餐廳' : '景點'}: ${option.name}</a>`;
+                                    } else {
+                                        optionLinkHtml = `<span>${option.type === 'restaurant' ? '餐廳' : '景點'}: ${option.name}</span>`;
+                                    }
+
+                                    let optionMapLinkHtml = '';
+                                    if (option.map_url) {
+                                        optionMapLinkHtml = `<a href="${option.map_url}" target="_blank">查看地圖/路線</a>`;
+                                    }
+
+                                    optionItem.innerHTML = `
+                                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                                            <div>${optionLinkHtml}</div>
+                                            ${optionMapLinkHtml ? `<div>${optionMapLinkHtml}</div>` : ''}
+                                        </div>
+                                    `;
+                                    optionsList.appendChild(optionItem);
+                                });
+                                if (activity.description.includes('埼玉組')) {
+                                    targetSaitamaList.appendChild(optionsList);
+                                } else if (activity.description.includes('約會組')) {
+                                    targetDateList.appendChild(optionsList);
+                                }
+                            }
                         });
-                        if (activity.description.includes('埼玉組')) {
-                            sSaitamaList.appendChild(optionsList);
-                        } else if (activity.description.includes('約會組')) {
-                            sDateList.appendChild(optionsList);
-                        }
                     }
-                });
+                };
+
+                // Process afternoon and evening activities for Day 6
+                processSplitActivities(day.afternoon, sSaitamaList, sDateList);
+                processSplitActivities(day.evening, sSaitamaList, sDateList);
 
                 splitContainer.appendChild(sSaitamaGroup);
                 splitContainer.appendChild(sDateGroup);
                 activitiesList.appendChild(splitContainer);
             } else {
-                renderActivities(day.morning, '早上');
+                // Normal rendering for other days or if no split activities on Day 6
                 renderActivities(day.afternoon, '下午');
                 renderActivities(day.evening, '晚上');
             }
-
-            renderActivities(day.morning, '早上');
-            renderActivities(day.afternoon, '下午');
-            renderActivities(day.evening, '晚上');
 
             dayCard.appendChild(activitiesList);
 
