@@ -12,8 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
     function renderItinerary(itinerary) {
         const container = document.getElementById('itinerary-container');
         container.innerHTML = ''; // Clear existing content
-        const mapContainer = document.getElementById('map-container');
-        mapContainer.innerHTML = ''; // Clear existing map content
 
         itinerary.forEach(day => {
             const dayCard = document.createElement('div');
@@ -23,7 +21,12 @@ document.addEventListener('DOMContentLoaded', () => {
             mapCard.classList.add('map-card');
             mapCard.innerHTML = `<h2>Day ${day.day} 地圖</h2>`;
             if (day.day_map_link) {
-                mapCard.innerHTML += `<iframe src="${day.day_map_link}&output=embed" width="100%" height="400px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>`;
+                // 檢查地圖連結是否為 Google Maps 嵌入連結
+                if (day.day_map_link.startsWith('https://www.google.com/maps/embed')) {
+                    mapCard.innerHTML += `<iframe src="${day.day_map_link}" width="100%" height="400px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>`;
+                } else {
+                    mapCard.innerHTML += `<p>地圖連結無效或不支援嵌入。請提供有效的 Google Maps 嵌入連結。</p>`;
+                }
             } else {
                 mapCard.innerHTML += `<p>無地圖資訊</p>`;
             }
@@ -76,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                     <div><strong>${activity.time}</strong> ${linkHtml}</div>
                                     ${noteHtml}
                                 </div>
-                                ${mapLinkHtml ? `<div>${mapLinkHtml}</div>` : ''}
+                                ${mapLinkHtml ? `<div class="map-link-wrapper">${mapLinkHtml}</div>` : ''}
                             </div>
                         `;
                         activitiesList.appendChild(listItem);
@@ -190,7 +193,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                     optionItem.innerHTML = `
                                         <div style="display: flex; justify-content: space-between; align-items: center;">
                                             <div>${optionLinkHtml}</div>
-                                            ${optionMapLinkHtml ? `<div>${optionMapLinkHtml}</div>` : ''}
+                                            ${optionMapLinkHtml ? `<div class="map-link-wrapper">${optionMapLinkHtml}</div>` : ''}
                                         </div>
                                     `;
                                     optionsList.appendChild(optionItem);
@@ -221,7 +224,7 @@ document.addEventListener('DOMContentLoaded', () => {
             dayCard.appendChild(activitiesList);
 
             container.appendChild(dayCard);
-            mapContainer.appendChild(mapCard); // Append map card to map container
+            dayCard.appendChild(mapCard); // Append map card to day card
         });
     }
 });

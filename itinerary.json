@@ -896,25 +896,6 @@
           "options": []
         }
       ]
-    },
-    {
-      "date": "2025-08-11",
-      "day": 1,
-      "theme": "東京夏日祭典",
-      "accommodation": "Ｍｉｎｎ葛西",
-      "day_map_link": "https://www.google.com/maps/search/?api=1&query=東京夏日祭典地點",
-      "morning": [
-        {
-          "time": "10:00",
-          "description": "參加東京夏日祭典 (例如：淺草森巴嘉年華或隅田川花火大會)",
-          "location": "東京市區",
-          "link": "https://www.gotokyo.org/tc/guide/august-events/",
-          "map_url": "https://www.google.com/maps/search/?api=1&query=東京夏日祭典地點",
-          "options": []
-        }
-      ],
-      "afternoon": [],
-      "evening": []
     }
   ]
 }
