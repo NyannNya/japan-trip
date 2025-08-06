@@ -47,6 +47,7 @@ main {
     padding: 20px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     transition: transform 0.2s ease-in-out;
+    position: relative; /* 添加相對定位 */
 }
 
 .day-card:hover {
@@ -105,9 +106,20 @@ main {
 
 /* .day-map-link-container is removed as map is now separate */
 
-.day-map-link-container a {
+.day-map-link-container {
+    position: absolute; /* 絕對定位 */
+    top: 20px; /* 距離頂部 */
+    right: 20px; /* 距離右側 */
     font-size: 0.9em;
+}
+
+.day-map-link-container a {
     color: #007bff;
+    text-decoration: none;
+}
+
+.day-map-link-container a:hover {
+    text-decoration: underline;
 }
 
 .activity-note {

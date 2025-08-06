@@ -13,27 +13,29 @@ document.addEventListener('DOMContentLoaded', () => {
         const container = document.getElementById('itinerary-container');
         container.innerHTML = ''; // Clear existing content
 
+        // 檢查重複的 day
+        const dayNumbers = new Set();
+        itinerary.forEach(day => {
+            if (dayNumbers.has(day.day)) {
+                console.warn(`警告：行程數據中存在重複的 Day ${day.day}。`);
+            }
+            dayNumbers.add(day.day);
+        });
+
         itinerary.forEach(day => {
             const dayCard = document.createElement('div');
             dayCard.classList.add('day-card');
 
-            const mapCard = document.createElement('div');
-            mapCard.classList.add('map-card');
-            mapCard.innerHTML = `<h2>Day ${day.day} 地圖</h2>`;
-            if (day.day_map_link) {
-                // 檢查地圖連結是否為 Google Maps 嵌入連結
-                if (day.day_map_link.startsWith('https://www.google.com/maps/embed')) {
-                    mapCard.innerHTML += `<iframe src="${day.day_map_link}" width="100%" height="400px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>`;
-                } else {
-                    mapCard.innerHTML += `<p>地圖連結無效或不支援嵌入。請提供有效的 Google Maps 嵌入連結。</p>`;
-                }
-            } else {
-                mapCard.innerHTML += `<p>無地圖資訊</p>`;
-            }
 
             const dateHeader = document.createElement('h2');
             dateHeader.textContent = `Day ${day.day}: ${day.date} - ${day.theme}`;
             dayCard.appendChild(dateHeader);
+            if (day.day_map_link) {
+                const dayMapLinkContainer = document.createElement('div');
+                dayMapLinkContainer.classList.add('day-map-link-container');
+                dayMapLinkContainer.innerHTML = `<a href="${day.day_map_link}" target="_blank">查看當日綜合路線圖</a>`;
+                dayCard.appendChild(dayMapLinkContainer);
+            }
 
             // Remove the old day map link container as map is now separate
             // if (day.day_map_link) {
@@ -224,7 +226,6 @@ document.addEventListener('DOMContentLoaded', () => {
             dayCard.appendChild(activitiesList);
 
             container.appendChild(dayCard);
-            dayCard.appendChild(mapCard); // Append map card to day card
         });
     }
 });
