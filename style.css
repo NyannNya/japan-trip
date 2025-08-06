@@ -21,12 +21,32 @@ header h1 {
 }
 
 main {
+    display: flex;
+    justify-content: space-between;
     padding: 20px;
-    max-width: 1000px;
+    max-width: 1200px; /* 增加最大寬度以容納兩個區塊 */
     margin: 20px auto;
+    background-color: #f4f7f6; /* 將背景色移到 main */
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+#itinerary-container {
+    flex: 2; /* 行程佔2份寬度 */
+    padding-right: 20px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+}
+
+#map-container {
+    flex: 1; /* 地圖佔1份寬度 */
+    padding-left: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    padding: 20px;
 }
 
 .day-card {
@@ -73,6 +93,7 @@ main {
     display: flex;
     align-items: flex-start; /* 調整對齊方式 */
     flex-wrap: wrap; /* 允許內容換行 */
+    position: relative; /* For absolute positioning of map link */
 }
 
 .activity-content {
@@ -88,10 +109,7 @@ main {
     flex-direction: column;
 }
 
-.day-map-link-container {
-    text-align: right;
-    margin-bottom: 10px;
-}
+/* .day-map-link-container is removed as map is now separate */
 
 .day-map-link-container a {
     font-size: 0.9em;
@@ -103,6 +121,40 @@ main {
     color: #666;
     margin-top: 5px;
     margin-left: 70px; /* 調整縮排以對齊時間 */
+}
+
+.split-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
+    border-top: 1px dashed #ccc;
+    padding-top: 20px;
+}
+
+.split-group {
+    flex: 1;
+    padding: 0 10px;
+}
+
+.split-group h4 {
+    color: #34495e;
+    border-bottom: 1px solid #3498db;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.activity-options-list {
+    list-style: disc;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.activity-options-list li {
+    background-color: #f0f0f0;
+    border-left: 2px solid #aed6f1;
+    padding: 5px 10px;
+    margin-bottom: 5px;
 }
 
 .day-card ul li strong {

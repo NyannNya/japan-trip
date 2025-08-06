@@ -12,21 +12,33 @@ document.addEventListener('DOMContentLoaded', () => {
     function renderItinerary(itinerary) {
         const container = document.getElementById('itinerary-container');
         container.innerHTML = ''; // Clear existing content
+        const mapContainer = document.getElementById('map-container');
+        mapContainer.innerHTML = ''; // Clear existing map content
 
         itinerary.forEach(day => {
             const dayCard = document.createElement('div');
             dayCard.classList.add('day-card');
 
+            const mapCard = document.createElement('div');
+            mapCard.classList.add('map-card');
+            mapCard.innerHTML = `<h2>Day ${day.day} 地圖</h2>`;
+            if (day.day_map_link) {
+                mapCard.innerHTML += `<iframe src="${day.day_map_link}&output=embed" width="100%" height="400px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>`;
+            } else {
+                mapCard.innerHTML += `<p>無地圖資訊</p>`;
+            }
+
             const dateHeader = document.createElement('h2');
             dateHeader.textContent = `Day ${day.day}: ${day.date} - ${day.theme}`;
             dayCard.appendChild(dateHeader);
 
-            if (day.day_map_link) {
-                const dayMapLinkContainer = document.createElement('div');
-                dayMapLinkContainer.classList.add('day-map-link-container');
-                dayMapLinkContainer.innerHTML = `<a href="${day.day_map_link}" target="_blank">查看當日綜合路線圖</a>`;
-                dayCard.appendChild(dayMapLinkContainer);
-            }
+            // Remove the old day map link container as map is now separate
+            // if (day.day_map_link) {
+            //     const dayMapLinkContainer = document.createElement('div');
+            //     dayMapLinkContainer.classList.add('day-map-link-container');
+            //     dayMapLinkContainer.innerHTML = `<a href="${day.day_map_link}" target="_blank">查看當日綜合路線圖</a>`;
+            //     dayCard.appendChild(dayMapLinkContainer);
+            // }
 
             const accommodationInfo = document.createElement('h3');
             accommodationInfo.textContent = `住宿: ${day.accommodation || '無'}`;
@@ -106,19 +118,15 @@ document.addEventListener('DOMContentLoaded', () => {
             // Special handling for Day 6 split activities for afternoon and evening
             if (day.day === 6 && (day.afternoon || day.evening)) {
                 const splitContainer = document.createElement('div');
-                splitContainer.style.display = 'flex';
-                splitContainer.style.justifyContent = 'space-around';
-                splitContainer.style.width = '100%';
+                splitContainer.classList.add('split-container'); // Add class for styling
 
                 const sSaitamaGroup = document.createElement('div');
-                sSaitamaGroup.style.flex = '1';
-                sSaitamaGroup.style.paddingRight = '10px';
+                sSaitamaGroup.classList.add('split-group'); // Add class for styling
                 sSaitamaGroup.innerHTML = '<h4>A組</h4><ul></ul>';
                 const sSaitamaList = sSaitamaGroup.querySelector('ul');
 
                 const sDateGroup = document.createElement('div');
-                sDateGroup.style.flex = '1';
-                sDateGroup.style.paddingLeft = '10px';
+                sDateGroup.classList.add('split-group'); // Add class for styling
                 sDateGroup.innerHTML = '<h4>B組</h4><ul></ul>';
                 const sDateList = sDateGroup.querySelector('ul');
 
@@ -164,7 +172,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                             if (activity.options && activity.options.length > 0) {
                                 const optionsList = document.createElement('ul');
-                                optionsList.style.marginLeft = '20px'; // Indent options
+                                optionsList.classList.add('activity-options-list'); // Add class for styling
                                 activity.options.forEach(option => {
                                     const optionItem = document.createElement('li');
                                     let optionLinkHtml = '';
@@ -213,6 +221,7 @@ document.addEventListener('DOMContentLoaded', () => {
             dayCard.appendChild(activitiesList);
 
             container.appendChild(dayCard);
+            mapContainer.appendChild(mapCard); // Append map card to map container
         });
     }
 });
