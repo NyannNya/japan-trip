@@ -104,9 +104,9 @@ document.addEventListener('DOMContentLoaded', () => {
                                 }
 
                                 optionItem.innerHTML = `
-                                    <div style="display: flex; justify-content: space-between; align-items: center;">
-                                        <div>${optionLinkHtml}</div>
-                                        ${optionMapLinkHtml ? `<div class="map-link-wrapper">${optionMapLinkHtml}</div>` : ''}
+                                    <div class="option-item-content">
+                                        <div class="option-name">${optionLinkHtml}</div>
+                                        ${optionMapLinkHtml ? `<div class="option-map-link">${optionMapLinkHtml}</div>` : ''}
                                     </div>
                                 `;
                                 optionsList.appendChild(optionItem);
@@ -193,9 +193,9 @@ document.addEventListener('DOMContentLoaded', () => {
                                     }
 
                                     optionItem.innerHTML = `
-                                        <div style="display: flex; justify-content: space-between; align-items: center;">
-                                            <div>${optionLinkHtml}</div>
-                                            ${optionMapLinkHtml ? `<div class="map-link-wrapper">${optionMapLinkHtml}</div>` : ''}
+                                        <div class="option-item-content">
+                                            <div class="option-name">${optionLinkHtml}</div>
+                                            ${optionMapLinkHtml ? `<div class="option-map-link">${optionMapLinkHtml}</div>` : ''}
                                         </div>
                                     `;
                                     optionsList.appendChild(optionItem);

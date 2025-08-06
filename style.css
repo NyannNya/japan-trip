@@ -161,6 +161,25 @@ main {
     border-left: 2px solid #aed6f1;
     padding: 5px 10px;
     margin-bottom: 5px;
+    display: flex; /* Add flexbox to the list item */
+    justify-content: space-between; /* Distribute space between items */
+    align-items: center; /* Vertically align items */
+}
+
+.option-item-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Ensure it takes full width */
+}
+
+.option-name {
+    flex-grow: 1; /* Allow name to take available space */
+    margin-right: 10px; /* Add some space between name and map link */
+}
+
+.option-map-link {
+    flex-shrink: 0; /* Prevent map link from shrinking */
 }
 
 .day-card ul li strong {

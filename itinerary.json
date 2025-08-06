@@ -111,7 +111,6 @@
           "options": [
             { "type": "restaurant", "name": "鳥貴族 葛西店", "link": "https://torikizoku.co.jp/", "map_url": "https://www.google.com/maps/search/?api=1&query=鳥貴族葛西店" },
             { "type": "restaurant", "name": "魚民 葛西店", "link": "https://www.monteroza.co.jp/brand/uom/", "map_url": "https://www.google.com/maps/search/?api=1&query=魚民葛西店" },
-            { "type": "restaurant", "name": "俺の肉屋 葛西店 (燒肉)", "link": null, "map_url": "https://www.google.com/maps/search/?api=1&query=俺の肉屋葛西店" },
             { "type": "restaurant", "name": "和民 葛西店", "link": "https://www.watami.co.jp/", "map_url": "https://www.google.com/maps/search/?api=1&query=和民葛西店" }
           ]
         },
@@ -206,7 +205,7 @@
           "map_url": "https://www.google.com/maps/search/?api=1&query=澀谷橫丁",
           "options": [
             { "type": "restaurant", "name": "澀谷橫丁 (多樣日式小吃、居酒屋)", "link": "https://shibuya-yokocho.com/", "map_url": "https://www.google.com/maps/search/?api=1&query=澀谷橫丁" },
-            { "type": "restaurant", "name": "俺の肉屋 澀谷店 (燒肉)", "link": null, "map_url": "https://www.google.com/maps/search/?api=1&query=俺の肉屋澀谷店" },
+            { "type": "restaurant", "name": "一蘭拉麵 澀谷店 (拉麵)", "link": "https://ichiran.com/shop/kanto/shibuya/", "map_url": "https://www.google.com/maps/search/?api=1&query=一蘭拉麵澀谷店" },
             { "type": "restaurant", "name": "梅丘壽司の美登利 澀谷店", "link": "https://www.sushinomidori.co.jp/", "map_url": "https://www.google.com/maps/search/?api=1&query=梅丘壽司の美登利澀谷店" }
           ]
         },
@@ -306,8 +305,7 @@
           "options": [
             { "type": "restaurant", "name": "利久牛舌 晴空塔Solamachi店", "link": "https://www.tokyo-solamachi.jp/shop/100/", "map_url": "https://www.google.com/maps/search/?api=1&query=利久牛舌晴空塔Solamachi店" },
             { "type": "restaurant", "name": "六厘舍TOKYO 晴空塔店 (沾麵)", "link": "https://www.rokutsurisha.com/", "map_url": "https://www.google.com/maps/search/?api=1&query=六厘舍TOKYO晴空塔店" },
-            { "type": "restaurant", "name": "俺の肉屋 晴空塔店 (燒肉)", "link": null, "map_url": "https://www.google.com/maps/search/?api=1&query=俺の肉屋晴空塔店" },
-            { "type": "restaurant", "name": "敘敘苑 晴空塔Solamachi店", "link": "https://www.jojoen.co.jp/", "map_url": "https://www.google.com/maps/search/?api=1&query=敘敘苑晴空塔Solamachi店" }
+            { "type": "restaurant", "name": "淺草今半 晴空塔Solamachi店 (壽喜燒)", "link": "https://www.asakusaimahan.com/", "map_url": "https://www.google.com/maps/search/?api=1&query=淺草今半晴空塔Solamachi店" }
           ]
         },
         {
@@ -404,7 +402,7 @@
             { "type": "restaurant", "name": "GUNDAM Cafe (鋼彈咖啡廳)", "link": "https://gundam-cafe.jp/", "map_url": "https://www.google.com/maps/search/?api=1&query=GUNDAMCafe秋葉原" },
             { "type": "restaurant", "name": "@home cafe (女僕咖啡廳)", "link": "https://www.cafe-athome.com/", "map_url": "https://www.google.com/maps/search/?api=1&query=@homecafe秋葉原" },
             { "type": "restaurant", "name": "九州じゃんがら 秋葉原店 (拉麵)", "link": "https://kyushujangara.co.jp/", "map_url": "https://www.google.com/maps/search/?api=1&query=九州じゃんがら秋葉原店" },
-            { "type": "restaurant", "name": "俺の肉屋 秋葉原店 (燒肉)", "link": null, "map_url": "https://www.google.com/maps/search/?api=1&query=俺の肉屋秋葉原店" },
+            { "type": "restaurant", "name": "牛かつもと村 秋葉原店 (炸牛排)", "link": "https://www.gyukatsu-motomura.com/", "map_url": "https://www.google.com/maps/search/?api=1&query=牛かつもと村秋葉原店" },
             { "type": "restaurant", "name": "咖哩の市民アルバ 秋葉原店", "link": "https://www.curry-alba.co.jp/", "map_url": "https://www.google.com/maps/search/?api=1&query=咖哩の市民アルバ秋葉原店" }
           ]
         },
@@ -501,7 +499,7 @@
           "options": [
             { "type": "restaurant", "name": "神田藪蕎麥", "link": "https://kanda-yabusoba.co.jp/", "map_url": "https://www.google.com/maps/search/?api=1&query=神田藪蕎麥" },
             { "type": "restaurant", "name": "肉の萬世 秋葉原本店 (肉料理)", "link": "https://www.mansei.co.jp/", "map_url": "https://www.google.com/maps/search/?api=1&query=肉の萬世秋葉原本店" },
-            { "type": "restaurant", "name": "俺の肉屋 御茶之水店 (燒肉)", "link": null, "map_url": "https://www.google.com/maps/search/?api=1&query=俺の肉屋御茶之水店" },
+            { "type": "restaurant", "name": "神田たまごけん (蛋包飯)", "link": "https://tabelog.com/tokyo/A1310/A131002/13095900/", "map_url": "https://www.google.com/maps/search/?api=1&query=神田たまごけん御茶之水" },
             { "type": "restaurant", "name": "星乃咖啡店 御茶之水店", "link": "https://www.hoshinocoffee.com/", "map_url": "https://www.google.com/maps/search/?api=1&query=星乃咖啡店御茶之水店" }
           ]
         }
@@ -715,7 +713,6 @@
           "options": [
             { "type": "restaurant", "name": "和幸豬排 Aqua City 台場店", "link": "https://www.wako-group.co.jp/shop/detail/1000", "map_url": "https://www.google.com/maps/search/?api=1&query=和幸豬排AquaCity台場店" },
             { "type": "restaurant", "name": "築地玉壽司 台場店", "link": "https://www.tsukiji-tamazushi.com/", "map_url": "https://www.google.com/maps/search/?api=1&query=築地玉壽司台場店" },
-            { "type": "restaurant", "name": "俺の肉屋 台場店 (燒肉)", "link": null, "map_url": "https://www.google.com/maps/search/?api=1&query=俺の肉屋台場店" },
             { "type": "restaurant", "name": "築地青空三代目 台場店", "link": "https://www.aozora3.jp/", "map_url": "https://www.google.com/maps/search/?api=1&query=築地青空三代目台場店" }
           ]
         },
@@ -769,18 +766,17 @@
           "options": [
             { "type": "restaurant", "name": "東京拉麵街", "link": "https://www.tokyoeki-1bangai.co.jp/street/ramen/", "map_url": "https://www.google.com/maps/search/?api=1&query=東京拉麵街" },
             { "type": "restaurant", "name": "黑塀橫丁 (美食街)", "link": null, "map_url": "https://www.google.com/maps/search/?api=1&query=東京車站黑塀橫丁" },
-            { "type": "restaurant", "name": "俺の肉屋 東京車站店 (燒肉)", "link": null, "map_url": "https://www.google.com/maps/search/?api=1&query=俺の肉屋東京車站店" },
             { "type": "restaurant", "name": "つじ半 東京駅店", "link": "https://tabelog.com/tokyo/A1302/A130201/13167000/", "map_url": "https://www.google.com/maps/search/?api=1&query=つじ半東京駅店" }
           ]
         },
         {
           "time": "14:00",
-          "description": "返回飯店取行李，前往東京成田機場 (搭乘JR中央線快速至東京轉成田特快N'EX)",
+          "description": "前往東京成田機場 (搭乘JR中央線快速至東京轉成田特快N'EX)，行李可寄放於車站置物櫃或使用行李運送服務",
           "location": "お茶の水 - 成田機場",
           "link": "https://www.jreast.co.jp/multi/zh-CHT/pass/nex.html",
           "map_url": "https://www.google.com/maps/dir/?api=1&origin=お茶の水&destination=成田機場&travelmode=transit&transit_mode=subway&time=1400",
           "options": [],
-          "note": "我想帶行李到車站寄放"
+          "note": "建議利用車站置物櫃或行李運送服務"
         },
         {
           "time": "16:00",
