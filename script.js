@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                 optionItem.innerHTML = `
                                     <div style="display: flex; justify-content: space-between; align-items: center;">
                                         <div>${optionLinkHtml}</div>
-                                        ${optionMapLinkHtml ? `<div>${optionMapLinkHtml}</div>` : ''}
+                                        ${optionMapLinkHtml ? `<div class="map-link-wrapper">${optionMapLinkHtml}</div>` : ''}
                                     </div>
                                 `;
                                 optionsList.appendChild(optionItem);
