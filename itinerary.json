@@ -20,6 +20,10 @@
       "theme": "抵達與葛西周邊探索",
       "accommodation": "Ｍｉｎｎ葛西",
       "day_map_link": "https://www.google.com/maps/dir/?api=1&origin=羽田機場&destination=Ｍｉｎｎ葛西&waypoints=葛西臨海公園|地下鐵博物館|AEON永旺夢樂城葛西店&travelmode=transit&transit_mode=subway",
+      "budget": {
+        "estimated_yen": 10000,
+        "note": "此為每日餐飲、交通、門票等預估預算，不含住宿及大型購物"
+      },
       "morning": [
         {
           "time": "04:25",
@@ -27,7 +31,10 @@
           "location": "羽田機場",
           "link": "https://tokyo-haneda.com/zh-CHT/",
           "map_url": "https://www.google.com/maps/search/?api=1&query=羽田機場",
-          "options": []
+          "options": [
+            { "type": "shopping", "name": "羽田機場國際線航廈商店", "link": "https://tokyo-haneda.com/zh-CHT/shops", "map_url": "https://www.google.com/maps/search/?api=1&query=羽田機場國際線航廈商店" },
+            { "type": "attraction", "name": "羽田機場展望台", "link": "https://tokyo-haneda.com/zh-CHT/sightseeing/observationdeck.html", "map_url": "https://www.google.com/maps/search/?api=1&query=羽田機場展望台" }
+          ]
         },
         {
           "time": "06:00",
@@ -35,7 +42,11 @@
           "location": "羽田機場 - Ｍｉｎｎ葛西",
           "link": "https://www.limousinebus.co.jp/ch2/platform_searches/index/4/21",
           "map_url": "https://www.google.com/maps/dir/?api=1&origin=羽田機場&destination=Ｍｉｎｎ葛西&travelmode=transit&transit_mode=subway&time=0600",
-          "options": []
+          "options": [
+            { "type": "transport", "name": "利木津巴士", "link": "https://www.limousinebus.co.jp/ch2/", "map_url": null },
+            { "type": "transport", "name": "京急電鐵", "link": "https://www.haneda-tokyo-access.com/tc/", "map_url": null },
+            { "type": "transport", "name": "東京單軌電車", "link": "https://www.tokyo-monorail.co.jp/chinese/", "map_url": null }
+          ]
         },
         {
           "time": "08:00",
@@ -43,7 +54,9 @@
           "location": "Ｍｉｎｎ葛西",
           "link": "https://minn.jp/zh-tw/kasai/",
           "map_url": "https://www.google.com/maps/search/?api=1&query=Ｍｉｎｎ葛西",
-          "options": []
+          "options": [
+            { "type": "accommodation", "name": "Ｍｉｎｎ葛西", "link": "https://minn.jp/zh-tw/kasai/", "map_url": "https://www.google.com/maps/search/?api=1&query=Ｍｉｎｎ葛西" }
+          ]
         },
         {
           "time": "09:00",
@@ -88,7 +101,9 @@
           "location": "地下鐵博物館",
           "link": "https://www.tokyometro.jp/museum/",
           "map_url": "https://www.google.com/maps/search/?api=1&query=地下鐵博物館",
-          "options": []
+          "options": [
+            { "type": "attraction", "name": "地下鐵博物館", "link": "https://www.tokyometro.jp/museum/", "map_url": "https://www.google.com/maps/search/?api=1&query=地下鐵博物館" }
+          ]
         },
         {
           "time": "16:00",
@@ -120,7 +135,9 @@
           "location": "Ｍｉｎｎ葛西",
           "link": null,
           "map_url": "https://www.google.com/maps/search/?api=1&query=Ｍｉｎｎ葛西",
-          "options": []
+          "options": [
+            { "type": "accommodation", "name": "Ｍｉｎｎ葛西", "link": "https://minn.jp/zh-tw/kasai/", "map_url": "https://www.google.com/maps/search/?api=1&query=Ｍｉｎｎ葛西" }
+          ]
         }
       ]
     },
@@ -130,6 +147,10 @@
       "theme": "澀谷與原宿潮流",
       "accommodation": "Ｍｉｎｎ葛西",
       "day_map_link": "https://www.google.com/maps/dir/?api=1&origin=葛西&destination=澀谷&waypoints=原宿|澀谷Hikarie|澀谷橫丁|澀谷PARCO&travelmode=transit&transit_mode=subway",
+      "budget": {
+        "estimated_yen": 15000,
+        "note": "此為每日餐飲、交通、門票等預估預算，不含住宿及大型購物"
+      },
       "morning": [
         {
           "time": "08:30",
@@ -147,7 +168,10 @@
           "location": "葛西 - 澀谷",
           "link": null,
           "map_url": "https://www.google.com/maps/dir/?api=1&origin=葛西&destination=澀谷&travelmode=transit&transit_mode=subway&time=0930",
-          "options": []
+          "options": [
+            { "type": "transport", "name": "東京Metro東西線", "link": null, "map_url": null },
+            { "type": "transport", "name": "東京Metro半藏門線", "link": null, "map_url": null }
+          ]
         },
         {
           "time": "10:30",
@@ -193,7 +217,9 @@
           "location": "原宿",
           "link": "https://www.linefriends.com/store/harajuku",
           "map_url": "https://www.google.com/maps/search/?api=1&query=原宿",
-          "options": []
+          "options": [
+            { "type": "shopping", "name": "LINE FRIENDS STORE 原宿店", "link": "https://www.linefriends.com/store/harajuku", "map_url": "https://www.google.com/maps/search/?api=1&query=LINEFRIENDSSTORE原宿店" }
+          ]
         }
       ],
       "evening": [
@@ -227,6 +253,10 @@
       "theme": "淺草與花やしき",
       "accommodation": "Ｍｉｎｎ葛西",
       "day_map_link": "https://www.google.com/maps/dir/?api=1&origin=葛西&destination=淺草&waypoints=花やしき|東京晴空塔|隅田川&travelmode=transit&transit_mode=subway",
+      "budget": {
+        "estimated_yen": 12000,
+        "note": "此為每日餐飲、交通、門票等預估預算，不含住宿及大型購物"
+      },
       "morning": [
         {
           "time": "08:30",
@@ -244,7 +274,10 @@
           "location": "葛西 - 淺草",
           "link": null,
           "map_url": "https://www.google.com/maps/dir/?api=1&origin=葛西&destination=淺草&travelmode=transit&transit_mode=subway&time=0930",
-          "options": []
+          "options": [
+            { "type": "transport", "name": "東京Metro東西線", "link": null, "map_url": null },
+            { "type": "transport", "name": "都營淺草線", "link": null, "map_url": null }
+          ]
         },
         {
           "time": "10:30",
@@ -281,7 +314,9 @@
           "location": "花やしき",
           "link": "https://www.hanayashiki.net/",
           "map_url": "https://www.google.com/maps/search/?api=1&query=花やしき",
-          "options": []
+          "options": [
+            { "type": "attraction", "name": "花やしき (Hanayashiki) 遊樂園", "link": "https://www.hanayashiki.net/", "map_url": "https://www.google.com/maps/search/?api=1&query=花やしき" }
+          ]
         },
         {
           "time": "17:00",
@@ -314,7 +349,10 @@
           "location": "隅田川",
           "link": null,
           "map_url": "https://www.google.com/maps/search/?api=1&query=隅田川",
-          "options": []
+          "options": [
+            { "type": "attraction", "name": "隅田川遊船", "link": "https://www.suijobus.co.jp/", "map_url": "https://www.google.com/maps/search/?api=1&query=隅田川遊船" },
+            { "type": "attraction", "name": "吾妻橋", "link": null, "map_url": "https://www.google.com/maps/search/?api=1&query=吾妻橋" }
+          ]
         }
       ]
     },
@@ -324,6 +362,10 @@
       "theme": "池袋與秋葉原動漫購物",
       "accommodation": "Ｍｉｎｎ葛西",
       "day_map_link": "https://www.google.com/maps/dir/?api=1&origin=葛西&destination=池袋&waypoints=秋葉原&travelmode=transit&transit_mode=subway",
+      "budget": {
+        "estimated_yen": 13000,
+        "note": "此為每日餐飲、交通、門票等預估預算，不含住宿及大型購物"
+      },
       "morning": [
         {
           "time": "08:30",
@@ -341,7 +383,10 @@
           "location": "葛西 - 池袋",
           "link": null,
           "map_url": "https://www.google.com/maps/dir/?api=1&origin=葛西&destination=池袋&travelmode=transit&transit_mode=subway&time=0930",
-          "options": []
+          "options": [
+            { "type": "transport", "name": "東京Metro東西線", "link": null, "map_url": null },
+            { "type": "transport", "name": "東京Metro有樂町線", "link": null, "map_url": null }
+          ]
         },
         {
           "time": "10:30",
@@ -376,7 +421,9 @@
           "location": "池袋 - 秋葉原",
           "link": null,
           "map_url": "https://www.google.com/maps/dir/?api=1&origin=池袋&destination=秋葉原&travelmode=transit&transit_mode=subway&time=1430",
-          "options": []
+          "options": [
+            { "type": "transport", "name": "JR山手線", "link": null, "map_url": null }
+          ]
         },
         {
           "time": "15:00",
@@ -412,7 +459,10 @@
           "location": "秋葉原",
           "link": "https://www.donki.com/store/shop_detail.php?shop_id=10",
           "map_url": "https://www.google.com/maps/search/?api=1&query=唐吉訶德秋葉原店",
-          "options": []
+          "options": [
+            { "type": "shopping", "name": "唐吉訶德 秋葉原店", "link": "https://www.donki.com/store/shop_detail.php?shop_id=10", "map_url": "https://www.google.com/maps/search/?api=1&query=唐吉訶德秋葉原店" },
+            { "type": "shopping", "name": "秋葉原無線電會館", "link": null, "map_url": "https://www.google.com/maps/search/?api=1&query=秋葉原無線電會館" }
+          ]
         }
       ]
     },
@@ -422,6 +472,10 @@
       "theme": "鎌倉一日遊",
       "accommodation": "お茶の水ホテルジュラク",
       "day_map_link": "https://www.google.com/maps/dir/?api=1&origin=葛西&destination=鎌倉大佛&waypoints=長谷寺|鶴岡八幡宮|お茶の水ホテルジュラク&travelmode=transit&transit_mode=subway",
+      "budget": {
+        "estimated_yen": 11000,
+        "note": "此為每日餐飲、交通、門票等預估預算，不含住宿及大型購物"
+      },
       "morning": [
         {
           "time": "08:00",
@@ -439,7 +493,10 @@
           "location": "葛西 - 鎌倉",
           "link": null,
           "map_url": "https://www.google.com/maps/dir/?api=1&origin=葛西&destination=鎌倉&travelmode=transit&transit_mode=subway&time=0830",
-          "options": []
+          "options": [
+            { "type": "transport", "name": "東京Metro東西線", "link": null, "map_url": null },
+            { "type": "transport", "name": "JR橫須賀線", "link": null, "map_url": null }
+          ]
         },
         {
           "time": "10:00",
@@ -447,7 +504,9 @@
           "location": "鎌倉大佛",
           "link": "https://www.kotoku-in.jp/",
           "map_url": "https://www.google.com/maps/search/?api=1&query=鎌倉大佛",
-          "options": []
+          "options": [
+            { "type": "attraction", "name": "高德院 (鎌倉大佛)", "link": "https://www.kotoku-in.jp/", "map_url": "https://www.google.com/maps/search/?api=1&query=高德院" }
+          ]
         },
         {
           "time": "11:30",
@@ -455,7 +514,9 @@
           "location": "長谷寺",
           "link": "https://www.hasedera.jp/",
           "map_url": "https://www.google.com/maps/search/?api=1&query=長谷寺",
-          "options": []
+          "options": [
+            { "type": "attraction", "name": "長谷寺", "link": "https://www.hasedera.jp/", "map_url": "https://www.google.com/maps/search/?api=1&query=長谷寺" }
+          ]
         }
       ],
       "afternoon": [
@@ -478,7 +539,9 @@
           "location": "鶴岡八幡宮",
           "link": "https://www.hachimangu.or.jp/",
           "map_url": "https://www.google.com/maps/search/?api=1&query=鶴岡八幡宮",
-          "options": []
+          "options": [
+            { "type": "attraction", "name": "鶴岡八幡宮", "link": "https://www.hachimangu.or.jp/", "map_url": "https://www.google.com/maps/search/?api=1&query=鶴岡八幡宮" }
+          ]
         },
         {
           "time": "16:30",
@@ -486,7 +549,10 @@
           "location": "鎌倉 - お茶の水ホテルジュラク",
           "link": null,
           "map_url": "https://www.google.com/maps/dir/?api=1&origin=鎌倉&destination=お茶の水ホテルジュラク&travelmode=transit&transit_mode=subway&time=1630",
-          "options": []
+          "options": [
+            { "type": "transport", "name": "JR橫須賀線", "link": null, "map_url": null },
+            { "type": "transport", "name": "JR中央線快速", "link": null, "map_url": null }
+          ]
         }
       ],
       "evening": [
@@ -511,6 +577,10 @@
       "theme": "上野與埼玉競技場 / 約會行程",
       "accommodation": "お茶の水ホテルジュラク",
       "day_map_link": "https://www.google.com/maps/dir/?api=1&origin=上野公園&destination=埼玉超級競技場&travelmode=transit&transit_mode=subway",
+      "budget": {
+        "estimated_yen": 14000,
+        "note": "此為每日餐飲、交通、門票等預估預算，不含住宿及大型購物"
+      },
       "morning": [
         {
           "time": "08:30",
@@ -555,7 +625,9 @@
           "location": "上野",
           "link": null,
           "map_url": null,
-          "options": []
+          "options": [
+            { "type": "attraction", "name": "埼玉超級競技場", "link": "https://www.saitama-arena.co.jp/", "map_url": "https://www.google.com/maps/search/?api=1&query=埼玉超級競技場" }
+          ]
         },
         {
           "time": "14:30",
@@ -563,7 +635,9 @@
           "location": "お茶の水 - 埼玉競技場",
           "link": null,
           "map_url": "https://www.google.com/maps/dir/?api=1&origin=お茶の水&destination=埼玉超級競技場&travelmode=transit&transit_mode=subway&time=1400",
-          "options": []
+          "options": [
+            { "type": "transport", "name": "JR中央線快速", "link": null, "map_url": null }
+          ]
         },
         {
           "time": "15:00",
@@ -571,7 +645,9 @@
           "location": "埼玉超級競技場",
           "link": "https://www.saitama-arena.co.jp/",
           "map_url": "https://www.google.com/maps/search/?api=1&query=埼玉超級競技場",
-          "options": []
+          "options": [
+            { "type": "attraction", "name": "埼玉超級競技場", "link": "https://www.saitama-arena.co.jp/", "map_url": "https://www.google.com/maps/search/?api=1&query=埼玉超級競技場" }
+          ]
         },
         {
           "time": "14:30",
@@ -579,7 +655,12 @@
           "location": "お茶の水 - 吉祥寺",
           "link": null,
           "map_url": "https://www.google.com/maps/dir/?api=1&origin=お茶の水&destination=吉祥寺&travelmode=transit&transit_mode=subway&time=1430",
-          "options": []
+          "options": [
+            { "type": "transport", "name": "JR中央線快速", "link": null, "map_url": null },
+            { "type": "transport", "name": "百合海鷗號", "link": null, "map_url": null },
+            { "type": "attraction", "name": "三鷹之森吉卜力美術館 (需預約)", "link": "https://www.ghibli-museum.jp/en/", "map_url": "https://www.google.com/maps/search/?api=1&query=三鷹之森吉卜力美術館" },
+            { "type": "shopping", "name": "吉祥寺PARCO", "link": "https://kichijoji.parco.jp/", "map_url": "https://www.google.com/maps/search/?api=1&query=吉祥寺PARCO" }
+          ]
         },
         {
           "time": "15:00",
@@ -626,6 +707,10 @@
       "theme": "台場海濱與未來科技",
       "accommodation": "お茶の水ホテルジュラク",
       "day_map_link": "https://www.google.com/maps/dir/?api=1&origin=お茶の水&destination=台場海濱公園&waypoints=台場鋼彈|日本科學未來館|大江戶溫泉物語&travelmode=transit&transit_mode=subway",
+      "budget": {
+        "estimated_yen": 12000,
+        "note": "此為每日餐飲、交通、門票等預估預算，不含住宿及大型購物"
+      },
       "morning": [
         {
           "time": "08:30",
@@ -643,7 +728,10 @@
           "location": "お茶の水 - 台場",
           "link": null,
           "map_url": "https://www.google.com/maps/dir/?api=1&origin=お茶の水&destination=台場&travelmode=transit&transit_mode=subway&time=0930",
-          "options": []
+          "options": [
+            { "type": "transport", "name": "JR中央線快速", "link": null, "map_url": null },
+            { "type": "transport", "name": "百合海鷗號", "link": null, "map_url": null }
+          ]
         },
         {
           "time": "10:30",
@@ -662,7 +750,10 @@
           "location": "台場",
           "link": "https://www.fujitv.co.jp/fujitv/",
           "map_url": "https://www.google.com/maps/search/?api=1&query=富士電視台本社大樓",
-          "options": []
+          "options": [
+            { "type": "attraction", "name": "富士電視台本社大樓", "link": "https://www.fujitv.co.jp/fujitv/", "map_url": "https://www.google.com/maps/search/?api=1&query=富士電視台本社大樓" },
+            { "type": "attraction", "name": "海賊王主題區 (富士電視台內)", "link": "https://www.fujitv.co.jp/fujitv/odaiba/onepiece.html", "map_url": "https://www.google.com/maps/search/?api=1&query=富士電視台海賊王主題區" }
+          ]
         }
       ],
       "afternoon": [
@@ -684,7 +775,10 @@
           "location": "台場",
           "link": "https://www.divercity-tokyo.com/tw/event/gundam/",
           "map_url": "https://www.google.com/maps/search/?api=1&query=台場鋼彈",
-          "options": []
+          "options": [
+            { "type": "attraction", "name": "台場鋼彈 (獨角獸鋼彈)", "link": "https://www.divercity-tokyo.com/tw/event/gundam/", "map_url": "https://www.google.com/maps/search/?api=1&query=台場獨角獸鋼彈" },
+            { "type": "shopping", "name": "DiverCity Tokyo Plaza", "link": "https://www.divercity-tokyo.com/tw/", "map_url": "https://www.google.com/maps/search/?api=1&query=DiverCityTokyoPlaza" }
+          ]
         },
         {
           "time": "16:00",
@@ -692,7 +786,9 @@
           "location": "日本科學未來館",
           "link": "https://www.miraikan.jst.go.jp/",
           "map_url": "https://www.google.com/maps/search/?api=1&query=日本科學未來館",
-          "options": []
+          "options": [
+            { "type": "attraction", "name": "日本科學未來館", "link": "https://www.miraikan.jst.go.jp/", "map_url": "https://www.google.com/maps/search/?api=1&query=日本科學未來館" }
+          ]
         },
         {
           "time": "17:30",
@@ -700,7 +796,9 @@
           "location": "大江戶溫泉物語",
           "link": "https://daiba.ooedoonsen.jp/",
           "map_url": "https://www.google.com/maps/search/?api=1&query=大江戶溫泉物語",
-          "options": []
+          "options": [
+            { "type": "attraction", "name": "大江戶溫泉物語", "link": "https://daiba.ooedoonsen.jp/", "map_url": "https://www.google.com/maps/search/?api=1&query=大江戶溫泉物語" }
+          ]
         }
       ],
       "evening": [
@@ -722,7 +820,9 @@
           "location": "お茶の水ホテルジュラク",
           "link": null,
           "map_url": "https://www.google.com/maps/search/?api=1&query=お茶の水ホテルジュラク",
-          "options": []
+          "options": [
+            { "type": "accommodation", "name": "お茶の水ホテルジュラク", "link": "https://www.hotel-juraku.co.jp/ochanomizu/", "map_url": "https://www.google.com/maps/search/?api=1&query=お茶の水ホテルジュラク" }
+          ]
         }
       ]
     },
@@ -732,6 +832,10 @@
       "theme": "返程",
       "accommodation": "無",
       "day_map_link": "https://www.google.com/maps/dir/?api=1&origin=お茶の水&destination=成田機場&travelmode=transit&transit_mode=subway",
+      "budget": {
+        "estimated_yen": 8000,
+        "note": "此為每日餐飲、交通、門票等預估預算，不含住宿及大型購物"
+      },
       "morning": [
         {
           "time": "09:00",
@@ -775,7 +879,10 @@
           "location": "お茶の水 - 成田機場",
           "link": "https://www.jreast.co.jp/multi/zh-CHT/pass/nex.html",
           "map_url": "https://www.google.com/maps/dir/?api=1&origin=お茶の水&destination=成田機場&travelmode=transit&transit_mode=subway&time=1400",
-          "options": [],
+          "options": [
+            { "type": "transport", "name": "JR中央線快速", "link": null, "map_url": null },
+            { "type": "transport", "name": "成田特快N'EX", "link": "https://www.jreast.co.jp/multi/zh-CHT/pass/nex.html", "map_url": null }
+          ],
           "note": "建議利用車站置物櫃或行李運送服務"
         },
         {
@@ -784,7 +891,9 @@
           "location": "成田機場",
           "link": "https://www.narita-airport.jp/ch2/",
           "map_url": "https://www.google.com/maps/search/?api=1&query=成田機場",
-          "options": []
+          "options": [
+            { "type": "attraction", "name": "成田機場", "link": "https://www.narita-airport.jp/ch2/", "map_url": "https://www.google.com/maps/search/?api=1&query=成田機場" }
+          ]
         }
       ],
       "evening": [
@@ -794,7 +903,9 @@
           "location": "成田機場",
           "link": null,
           "map_url": "https://www.google.com/maps/search/?api=1&query=成田機場",
-          "options": []
+          "options": [
+            { "type": "attraction", "name": "成田機場", "link": "https://www.narita-airport.jp/ch2/", "map_url": "https://www.google.com/maps/search/?api=1&query=成田機場" }
+          ]
         }
       ]
     }
